@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- SEO PRIMARIO -->
+<title>PRC Data & Intelligence · OSINT, Ciberinteligencia y Análisis Estratégico</title>
+<meta name="description" content="Inteligencia estratégica, OSINT, HUMINT, ciberinteligencia y escolta digital. Análisis operativo para anticipar riesgos y proteger activos críticos. Equipo con trayectoria en organismos nacionales de inteligencia.">
+<meta name="keywords" content="OSINT, HUMINT, ciberinteligencia, escolta digital, inteligencia estratégica, análisis de riesgos, ciberseguridad, investigación digital, CTI, threat intelligence, PRC Intel">
+<meta name="author" content="PRC Data & Intelligence">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="language" content="Spanish">
+<meta name="geo.region" content="ES">
+<link rel="canonical" href="https://www.prcintel.com/">
+<link rel="alternate" hreflang="es-ES" href="https://www.prcintel.com/">
+<link rel="alternate" hreflang="x-default" href="https://www.prcintel.com/">
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PRC Data & Intelligence">
+<meta property="og:title" content="PRC Data & Intelligence · Inteligencia estratégica y ciberinteligencia">
+<meta property="og:description" content="OSINT, HUMINT, ciberinteligencia y escolta digital. Transformamos datos en ventaja estratégica para proteger sus activos críticos.">
+<meta property="og:url" content="https://www.prcintel.com/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://www.prcintel.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PRC Data & Intelligence — Inteligencia estratégica, OSINT y ciberinteligencia">
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PRC Data & Intelligence">
+<meta name="twitter:description" content="OSINT, HUMINT, ciberinteligencia y escolta digital. Inteligencia que permite anticiparse, decidir con precisión y proteger activos críticos.">
+<meta name="twitter:image" content="https://www.prcintel.com/og-image.jpg">
+<meta name="twitter:image:alt" content="PRC Data & Intelligence — Inteligencia estratégica">
+
+<!-- MOBILE / PWA -->
+<meta name="theme-color" content="#f4f3f1">
+<meta name="color-scheme" content="light dark">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="PRC Intel">
+
+<!-- FAVICON SVG inline -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f4f3f1'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='60' font-weight='300' fill='%234a5058' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f4f3f1'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='60' font-weight='300' fill='%234a5058' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+
+<!-- JSON-LD / SCHEMA.ORG -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.prcintel.com/#organization",
+      "name": "PRC Data & Intelligence",
+      "alternateName": "PRC Intel",
+      "url": "https://www.prcintel.com/",
+      "email": "jmp@prcintel.com",
+      "description": "Inteligencia estratégica, ciberseguridad y análisis operativo para organizaciones que necesitan anticiparse, protegerse y actuar con ventaja.",
+      "foundingDate": "2026",
+      "areaServed": { "@type": "Country", "name": "España" },
+      "knowsAbout": ["OSINT","HUMINT","Ciberinteligencia","Threat Intelligence","Análisis de riesgos","Ciberseguridad","Inteligencia estratégica","Escolta Digital"],
+      "founder": { "@type": "Person", "name": "José Manuel Prada" }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.prcintel.com/#service",
+      "name": "PRC Data & Intelligence",
+      "url": "https://www.prcintel.com/",
+      "priceRange": "$$$",
+      "serviceType": ["OSINT","HUMINT","Ciberinteligencia","Escolta Digital"],
+      "provider": { "@id": "https://www.prcintel.com/#organization" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.prcintel.com/#website",
+      "url": "https://www.prcintel.com/",
+      "name": "PRC Data & Intelligence",
+      "publisher": { "@id": "https://www.prcintel.com/#organization" },
+      "inLanguage": "es-ES"
+    }
+  ]
+}
+</script>
+
+<!-- PRECONNECT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://unpkg.com">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@300;400;500&display=swap&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@300;400;500&display=swap"></noscript>
+<script>
+  (function(){
+    var t = localStorage.getItem('prc-theme');
+    if (t && t !== 'gold') document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; font-weight: 300; overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* THEMES */
+:root {
+  --bg: #09112a;
+  --bg2: #0d1835;
+  --bg3: #111f42;
+  --accent: #c9a84c;
+  --accent2: #e8c76a;
+  --text: #e8e4dc;
+  --text-dim: #8a8478;
+  --text-mid: #b8b0a0;
+  --border: rgba(201,168,76,0.18);
+  --border-dim: rgba(255,255,255,0.06);
+  --nav-blur: rgba(9,17,42,0.88);
+}
+[data-theme="noir"] {
+  --bg: #070a10;
+  --bg2: #0c1018;
+  --bg3: #111820;
+  --accent: #4db8d4;
+  --accent2: #7ed6e8;
+  --text: #e2ecf0;
+  --text-dim: #5a7a84;
+  --text-mid: #9ab4bc;
+  --border: rgba(77,184,212,0.18);
+  --border-dim: rgba(255,255,255,0.06);
+  --nav-blur: rgba(7,10,16,0.88);
+}
+[data-theme="slate"] {
+  --bg: #0b0e17;
+  --bg2: #101420;
+  --bg3: #161c2e;
+  --accent: #7c8fff;
+  --accent2: #a4b0ff;
+  --text: #e4e6f0;
+  --text-dim: #5a5f7a;
+  --text-mid: #9098b8;
+  --border: rgba(124,143,255,0.18);
+  --border-dim: rgba(255,255,255,0.06);
+  --nav-blur: rgba(11,14,23,0.88);
+}
+[data-theme="platino"] {
+  --bg: #f4f3f1;
+  --bg2: #eceae6;
+  --bg3: #e2dfda;
+  --accent: #3a3f47;
+  --accent2: #2e3138;
+  --text: #18191c;
+  --text-dim: #6b6e74;
+  --text-mid: #3f434a;
+  --border: rgba(58,63,71,0.28);
+  --border-dim: rgba(0,0,0,0.09);
+  --nav-blur: rgba(244,243,241,0.94);
+}
+
+/* ── ACCESIBILIDAD ── */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+:focus:not(:focus-visible) { outline: none; }
+.skip-link { position: absolute; top: -40px; left: 0; background: var(--accent); color: var(--bg); padding: 10px 16px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; z-index: 9999; transition: top 0.2s; }
+.skip-link:focus { top: 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+/* ── PREFERS-REDUCED-MOTION ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .scroll-line { animation: none !important; }
+}
+
+/* TYPOGRAPHY */
+.serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 60px; height: 72px;
+  background: var(--nav-blur); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-dim);
+  transition: all 0.4s;
+}
+nav.scrolled { height: 60px; }
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; letter-spacing: 0.12em; color: var(--accent); text-transform: uppercase; }
+.nav-links { display: flex; gap: 40px; }
+.nav-links a { color: var(--text-mid); font-size: 12px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: color 0.3s; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.nav-links a:hover { color: var(--accent); }
+.nav-cta { -webkit-appearance: none; background: transparent; border: 1px solid var(--accent); color: var(--accent); padding: 8px 24px; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: all 0.3s; -webkit-tap-highlight-color: transparent; }
+.nav-cta:hover { background: var(--accent); color: var(--bg); }
+
+/* REVEAL */
+.reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(.16,1,.3,1), transform 0.8s cubic-bezier(.16,1,.3,1); }
+.reveal.visible { opacity: 1; transform: none; }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: 100svh;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+  background: radial-gradient(ellipse 80% 60% at 60% 40%, var(--bg3) 0%, var(--bg) 70%);
+}
+.hero-grid {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: linear-gradient(var(--border-dim) 1px, transparent 1px), linear-gradient(90deg, var(--border-dim) 1px, transparent 1px);
+  background-size: 80px 80px;
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+.hero-content { text-align: center; z-index: 1; padding: 0 20px; }
+.hero-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--accent); margin-bottom: 28px; }
+.hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(72px, 10vw, 130px); font-weight: 300; line-height: 0.92; color: var(--text); margin-bottom: 12px; }
+.hero-title em { font-style: italic; color: var(--accent); }
+.hero-subtitle { font-family: 'Cormorant Garamond', serif; font-size: clamp(22px, 3vw, 34px); font-weight: 300; font-style: italic; color: var(--text-mid); margin-bottom: 56px; letter-spacing: 0.02em; }
+.hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn-primary { -webkit-appearance: none; background: var(--accent); color: var(--bg); padding: 14px 40px; font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; border: none; cursor: pointer; transition: all 0.3s; -webkit-tap-highlight-color: transparent; }
+.btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+.btn-outline { -webkit-appearance: none; background: transparent; border: 1px solid var(--border); color: var(--text); padding: 14px 40px; font-size: 11px; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; transition: all 0.3s; -webkit-tap-highlight-color: transparent; }
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+.hero-scroll { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; color: var(--text-dim); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; }
+.scroll-line { width: 1px; height: 50px; background: linear-gradient(var(--accent), transparent); animation: scrollpulse 2s ease-in-out infinite; }
+@keyframes scrollpulse { 0%,100%{opacity:0.3} 50%{opacity:1} }
+
+/* SECTION BASE */
+section { padding: 120px 60px; }
+.section-label { font-size: 10px; font-weight: 500; letter-spacing: 0.35em; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; }
+.section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(42px, 6vw, 76px); font-weight: 300; line-height: 1.05; color: var(--text); }
+.section-title em { font-style: italic; color: var(--accent); }
+.section-divider { width: 48px; height: 1px; background: var(--accent); margin: 32px 0; opacity: 0.6; }
+.body-text { font-size: 15px; font-weight: 300; line-height: 1.85; color: var(--text-mid); max-width: 560px; }
+
+/* ABOUT */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: start; max-width: 1200px; margin: 0 auto; }
+.objectives-list { list-style: none; display: flex; flex-direction: column; gap: 24px; margin-top: 40px; }
+.obj-item { display: flex; gap: 20px; align-items: flex-start; padding: 24px; border: 1px solid var(--border-dim); transition: border-color 0.3s, background 0.3s; }
+.obj-item:hover { border-color: var(--border); background: rgba(255,255,255,0.02); }
+.obj-num { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 300; color: var(--accent); opacity: 0.5; line-height: 1; min-width: 32px; }
+.obj-text { font-size: 14px; font-weight: 300; color: var(--text-mid); line-height: 1.7; }
+
+/* SERVICES */
+.services-section { background: var(--bg2); }
+.services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; margin-top: 60px; max-width: 1200px; margin-left: auto; margin-right: auto; }
+.service-card { background: var(--bg); padding: 48px; cursor: pointer; transition: background 0.3s; position: relative; overflow: hidden; border: 1px solid var(--border-dim); }
+.service-card::before { content:''; position: absolute; top:0; left:0; right:0; height: 2px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 0.4s cubic-bezier(.16,1,.3,1); }
+.service-card:hover::before, .service-card.active::before { transform: scaleX(1); }
+.service-card:hover, .service-card.active { background: var(--bg3); }
+.service-tag { font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
+.service-name { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 300; color: var(--text); margin-bottom: 16px; line-height: 1.1; }
+.service-summary { font-size: 14px; color: var(--text-dim); line-height: 1.7; }
+.service-expand { overflow: hidden; max-height: 0; transition: max-height 0.5s cubic-bezier(.16,1,.3,1); }
+.service-expand.open { max-height: 400px; }
+.service-detail { padding-top: 24px; border-top: 1px solid var(--border-dim); margin-top: 24px; }
+.service-detail ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.service-detail li { font-size: 13px; font-weight: 300; color: var(--text-mid); padding-left: 16px; position: relative; }
+.service-detail li::before { content:'—'; position: absolute; left: 0; color: var(--accent); opacity: 0.6; }
+.service-arrow { position: absolute; bottom: 24px; right: 24px; font-size: 20px; color: var(--accent); opacity: 0.4; transition: all 0.3s; }
+.service-card:hover .service-arrow { opacity: 1; transform: translate(2px, -2px); }
+
+/* PHILOSOPHY */
+.phil-header { max-width: 600px; margin-bottom: 80px; }
+.pillars { display: flex; gap: 0; max-width: 1200px; margin: 0 auto; position: relative; }
+.pillar { flex: 1; padding: 40px 32px 40px; border-left: 1px solid var(--border-dim); position: relative; transition: background 0.3s; }
+.pillar:hover { background: var(--bg2); }
+.pillar-num { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 300; color: var(--accent); opacity: 0.2; line-height: 1; margin-bottom: 8px; }
+.pillar-title { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 600; color: var(--text); margin-bottom: 12px; line-height: 1.3; }
+.pillar-text { font-size: 13px; color: var(--text-dim); line-height: 1.7; }
+
+/* TEAM */
+.team-section { background: var(--bg2); }
+.team-header { max-width: 1200px; margin: 0 auto 60px; display: flex; align-items: flex-end; justify-content: space-between; }
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; max-width: 1200px; margin: 0 auto; align-items: stretch; }
+.team-grid > div { display: flex; flex-direction: column; }
+.team-card { background: var(--bg); padding: 40px 36px; border: 1px solid var(--border-dim); transition: border-color 0.3s, transform 0.3s; flex: 1; }
+.team-card:hover { border-color: var(--border); transform: translateY(-2px); }
+.team-photo { width: 72px; height: 72px; border-radius: 50%; background: var(--bg3); border: 1px solid var(--border); margin-bottom: 28px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.team-photo-inner { width: 100%; height: 100%; background: linear-gradient(135deg, var(--bg3), var(--bg2)); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--accent); opacity: 0.6; }
+.team-role { font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; font-weight: 500; }
+.team-name { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 400; color: var(--text); margin-bottom: 16px; }
+.team-bio { font-size: 13px; color: var(--text-dim); line-height: 1.75; }
+
+/* VALUE PROP */
+.value-section { max-width: 1200px; margin: 0 auto; }
+.value-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.value-items { display: flex; flex-direction: column; gap: 0; }
+.value-item { padding: 28px 0; border-bottom: 1px solid var(--border-dim); display: flex; gap: 24px; align-items: flex-start; }
+.value-icon { width: 32px; height: 32px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.value-icon-inner { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
+.value-item-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; color: var(--text); margin-bottom: 6px; }
+.value-item-text { font-size: 13px; color: var(--text-dim); line-height: 1.7; }
+.value-callout { background: var(--bg2); border: 1px solid var(--border-dim); padding: 48px; }
+.callout-title { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300; font-style: italic; color: var(--text); margin-bottom: 20px; line-height: 1.3; }
+.callout-text { font-size: 14px; color: var(--text-mid); line-height: 1.8; }
+
+/* CONTACT */
+.contact-section { background: var(--bg2); }
+.contact-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+.contact-line { display: flex; align-items: center; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--border-dim); }
+.contact-label { font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--accent); min-width: 80px; }
+.contact-value { font-size: 15px; color: var(--text); font-weight: 300; }
+.contact-value a { color: var(--text); text-decoration: none; transition: color 0.3s; }
+.contact-value a:hover { color: var(--accent); }
+
+/* FOOTER */
+footer { border-top: 1px solid var(--border-dim); background: var(--bg); }
+.footer-main { padding: 60px 60px 40px; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 60px; max-width: 1320px; margin: 0 auto; }
+.footer-brand p { font-size: 13px; color: var(--text-dim); line-height: 1.8; margin-top: 16px; max-width: 260px; }
+.footer-col-title { font-size: 10px; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; }
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-links a { font-size: 13px; color: var(--text-dim); text-decoration: none; transition: color 0.25s; cursor: pointer; }
+.footer-links a:hover { color: var(--text); }
+.footer-bottom { border-top: 1px solid var(--border-dim); padding: 20px 60px; max-width: 1320px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 600; letter-spacing: 0.15em; color: var(--accent); text-transform: uppercase; }
+.footer-legal-links { display: flex; gap: 28px; flex-wrap: wrap; }
+.footer-legal-links a { font-size: 11px; color: var(--text-dim); text-decoration: none; transition: color 0.25s; cursor: pointer; letter-spacing: 0.03em; }
+.footer-legal-links a:hover { color: var(--text); }
+.footer-copy { font-size: 11px; color: var(--text-dim); letter-spacing: 0.03em; }
+
+/* MODAL */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 300; display: flex; align-items: center; justify-content: center; padding: 24px; backdrop-filter: blur(4px); }
+.modal-box { background: var(--bg2); border: 1px solid var(--border-dim); max-width: 680px; width: 100%; max-height: 80vh; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 48px; position: relative; }
+.modal-box::-webkit-scrollbar { width: 4px; }
+.modal-box::-webkit-scrollbar-thumb { background: var(--border); }
+.modal-close { position: absolute; top: 20px; right: 24px; background: none; border: none; color: var(--text-dim); font-size: 20px; cursor: pointer; transition: color 0.2s; }
+.modal-close:hover { color: var(--text); }
+.modal-title { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300; color: var(--text); margin-bottom: 8px; }
+.modal-subtitle { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 32px; }
+.modal-body { font-size: 13px; color: var(--text-mid); line-height: 1.85; }
+.modal-body h3 { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 400; color: var(--text); margin: 28px 0 10px; }
+.modal-body p { margin-bottom: 14px; }
+
+/* COOKIE BANNER */
+.cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; z-index: 250; background: var(--bg2); border-top: 1px solid var(--border-dim); padding: 20px 60px; display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+.cookie-text { font-size: 13px; color: var(--text-mid); line-height: 1.6; flex: 1; min-width: 280px; }
+.cookie-text a { color: var(--accent); text-decoration: none; cursor: pointer; }
+.cookie-actions { display: flex; gap: 12px; flex-shrink: 0; }
+.cookie-btn { padding: 10px 24px; font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: all 0.25s; border: none; }
+.cookie-btn-accept { background: var(--accent); color: var(--bg); }
+.cookie-btn-accept:hover { opacity: 0.85; }
+.cookie-btn-reject { background: transparent; border: 1px solid var(--border-dim); color: var(--text-dim); }
+.cookie-btn-reject:hover { border-color: var(--border); color: var(--text); }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  nav { padding: 0 20px; }
+  .nav-links { display: none; }
+  .nav-cta { padding: 7px 16px; font-size: 10px; }
+
+  .hero-content { padding: 0 24px; }
+  .hero-scroll { display: none; }
+
+  section { padding: 72px 24px; }
+
+  /* About */
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+
+  /* Services */
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card { padding: 32px 24px; }
+
+  /* Philosophy */
+  .pillars { flex-direction: column; }
+  .pillar { border-left: none; border-top: 1px solid var(--border-dim); padding: 28px 0; }
+
+  /* Team */
+  .team-grid { grid-template-columns: 1fr; }
+  .team-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .team-header p { text-align: left; }
+
+  /* Value */
+  .value-grid { grid-template-columns: 1fr; gap: 48px; }
+  .value-callout { padding: 32px 24px; }
+
+  /* Contact */
+  .contact-inner { grid-template-columns: 1fr; gap: 48px; }
+
+  /* Footer */
+  .footer-main { grid-template-columns: 1fr 1fr; gap: 40px; padding: 48px 24px 32px; }
+  .footer-bottom { padding: 20px 24px; flex-direction: column; align-items: flex-start; gap: 16px; }
+  .footer-legal-links { flex-wrap: wrap; gap: 16px; }
+
+  /* Tweaks panel */
+  .tweaks-panel { right: 12px; bottom: 12px; width: 220px; padding: 18px; }
+}
+
+@media (max-width: 480px) {
+  nav { height: 60px; }
+  .nav-logo { font-size: 16px; }
+
+  .hero-title { line-height: 0.95; }
+
+  .hero-actions { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-outline { width: 100%; max-width: 280px; text-align: center; }
+
+  .about-grid { padding: 72px 20px; }
+  .obj-item { padding: 16px; }
+
+  .footer-main { grid-template-columns: 1fr; gap: 32px; padding: 40px 20px 28px; }
+
+  .section-title { line-height: 1.08; }
+  .callout-title { font-size: 24px; }
+
+  .contact-line { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .contact-label { min-width: unset; }
+}
+
+/* TWEAKS PANEL */
+.tweaks-panel { position: fixed; bottom: 24px; right: 24px; z-index: 200; background: var(--bg2); border: 1px solid var(--border); padding: 24px; width: 260px; display: none; box-shadow: 0 8px 32px rgba(0,0,0,0.18); }
+.tweaks-panel.open { display: block; }
+.tweaks-title { font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; font-weight: 500; }
+.tweak-group { margin-bottom: 20px; }
+.tweak-label { font-size: 11px; color: var(--text-mid); margin-bottom: 10px; letter-spacing: 0.05em; }
+.theme-options { display: flex; gap: 8px; }
+.theme-swatch { width: 32px; height: 32px; cursor: pointer; border: 2px solid transparent; transition: border-color 0.2s; }
+.theme-swatch.active { border-color: var(--accent); }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Ir al contenido</a>
+
+<!-- NAV -->
+<nav aria-label="Navegación principal">
+  <div class="nav-logo" role="img" aria-label="PRC Intel">PRC Intel</div>
+  <div class="nav-links">
+    <a href="#nosotros">Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#filosofia">Filosofía</a>
+    <a href="#equipo">Equipo</a>
+  </div>
+  <button class="nav-cta" data-scroll="contacto">Contacto</button>
+</nav>
+
+<main id="main-content">
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-grid"></div>
+    <canvas id="globe-canvas" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:all;opacity:0.9"></canvas>
+    <div class="hero-content">
+      <div class="reveal"><p class="hero-eyebrow">Inteligencia · Seguridad · Decisión</p></div>
+      <div class="reveal" style="transition-delay:0.1s">
+        <h1 class="hero-title serif">PRC<br><em>Data &amp;</em><br>Intelligence</h1>
+      </div>
+      <div class="reveal" style="transition-delay:0.2s">
+        <p class="hero-subtitle">Transformamos datos en ventaja estratégica</p>
+      </div>
+      <div class="reveal" style="transition-delay:0.3s">
+        <div class="hero-actions">
+          <button class="btn-primary" data-scroll="servicios">Nuestros servicios</button>
+          <button class="btn-outline" data-scroll="nosotros">Conocer más</button>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="nosotros" style="max-width:1320px;margin:0 auto;padding:120px 60px">
+    <div class="about-grid">
+      <div>
+        <div class="reveal"><p class="section-label">PRC Intel</p></div>
+        <div class="reveal" style="transition-delay:0.1s"><h2 class="section-title serif">Expertos en<br><em>inteligencia</em></h2></div>
+        <div class="reveal" style="transition-delay:0.15s"><div class="section-divider"></div></div>
+        <div class="reveal" style="transition-delay:0.2s"><p class="body-text">Somos especialistas en OSINT y ciberinteligencia, dos pilares esenciales para el desarrollo de estrategias de seguridad eficaces, proactivas y orientadas a la toma de decisiones.</p></div>
+        <div class="reveal" style="transition-delay:0.25s"><p class="body-text" style="margin-top:20px">Nuestro equipo multidisciplinar trabaja con un compromiso firme hacia la seguridad, la transparencia y la excelencia operativa. Aplicamos herramientas avanzadas para transformar grandes volúmenes de datos en inteligencia accionable.</p></div>
+      </div>
+      <div>
+        <div class="reveal" style="transition-delay:0.1s"><p class="section-label" style="margin-bottom:28px">Objetivos</p></div>
+        <ul class="objectives-list">
+          <div class="reveal" style="transition-delay:0.15s">
+            <li class="obj-item">
+              <span class="obj-num serif">01</span>
+              <span class="obj-text">Proteger y fortalecer la seguridad de nuestros clientes mediante inteligencia precisa y verificable</span>
+            </li>
+          </div>
+          <div class="reveal" style="transition-delay:0.23s">
+            <li class="obj-item">
+              <span class="obj-num serif">02</span>
+              <span class="obj-text">Convertir datos complejos en información clara para la toma de decisiones estratégicas</span>
+            </li>
+          </div>
+          <div class="reveal" style="transition-delay:0.31s">
+            <li class="obj-item">
+              <span class="obj-num serif">03</span>
+              <span class="obj-text">Fomentar la transparencia y la colaboración con instituciones y equipos técnicos</span>
+            </li>
+          </div>
+          <div class="reveal" style="transition-delay:0.39s">
+            <li class="obj-item">
+              <span class="obj-num serif">04</span>
+              <span class="obj-text">Impulsar la excelencia operativa mediante procesos analíticos rigurosos</span>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section" id="servicios" style="padding:120px 60px">
+    <div style="max-width:1200px;margin:0 auto">
+      <div class="reveal"><p class="section-label">Capacidades</p></div>
+      <div class="reveal" style="transition-delay:0.1s"><h2 class="section-title serif">Nuestros<br><em>servicios</em></h2></div>
+      <div class="reveal" style="transition-delay:0.15s"><div class="section-divider"></div></div>
+    </div>
+    <div class="services-grid" style="margin-top:60px">
+      <!-- OSINT -->
+      <div class="reveal">
+        <div class="service-card" role="button" tabindex="0" aria-expanded="false">
+          <p class="service-tag">Inteligencia de fuentes abiertas</p>
+          <h3 class="service-name serif">OSINT</h3>
+          <p class="service-summary">Investigaciones avanzadas basadas en fuentes abiertas, accesibles de forma legal y pública.</p>
+          <div class="service-expand">
+            <div class="service-detail">
+              <ul>
+                <li>Identificación de amenazas y actores hostiles</li>
+                <li>Análisis de presencia digital y exposición pública</li>
+                <li>Investigación de fraude, suplantación y actividades ilícitas</li>
+                <li>Monitorización de redes sociales y capas profundas de la red</li>
+                <li>Preservación y documentación de evidencias digitales</li>
+                <li>Elaboración de perfiles y mapas de riesgo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="service-arrow">↗</div>
+        </div>
+      </div>
+      <!-- HUMINT -->
+      <div class="reveal" style="transition-delay:0.08s">
+        <div class="service-card" role="button" tabindex="0" aria-expanded="false">
+          <p class="service-tag">Inteligencia humana</p>
+          <h3 class="service-name serif">HUMINT</h3>
+          <p class="service-summary">Capacidades avanzadas en inteligencia humana para obtener perspectivas que los datos digitales no pueden revelar.</p>
+          <div class="service-expand">
+            <div class="service-detail">
+              <ul>
+                <li>Análisis de comportamientos, relaciones y dinámicas de influencia</li>
+                <li>Obtención de información contextual en entornos complejos</li>
+                <li>Validación y contraste de hipótesis mediante fuentes cualificadas</li>
+                <li>Integración HUMINT con análisis técnico y estratégico</li>
+              </ul>
+            </div>
+          </div>
+          <div class="service-arrow">↗</div>
+        </div>
+      </div>
+      <!-- Ciberinteligencia -->
+      <div class="reveal" style="transition-delay:0.16s">
+        <div class="service-card" role="button" tabindex="0" aria-expanded="false">
+          <p class="service-tag">Inteligencia digital</p>
+          <h3 class="service-name serif">Ciberinteligencia</h3>
+          <p class="service-summary">Identificación, análisis y anticipación de amenazas en el entorno digital para respaldar decisiones estratégicas.</p>
+          <div class="service-expand">
+            <div class="service-detail">
+              <ul>
+                <li>Identificación de amenazas, actores hostiles y campañas maliciosas</li>
+                <li>Análisis de infraestructuras y superficies de ataque</li>
+                <li>Correlación de indicadores técnicos y detección temprana</li>
+                <li>Elaboración de inteligencia estratégica y operativa</li>
+              </ul>
+            </div>
+          </div>
+          <div class="service-arrow">↗</div>
+        </div>
+      </div>
+      <!-- Escolta Digital -->
+      <div class="reveal" style="transition-delay:0.24s">
+        <div class="service-card" role="button" tabindex="0" aria-expanded="false">
+          <p class="service-tag">Protección digital</p>
+          <h3 class="service-name serif">Escolta Digital</h3>
+          <p class="service-summary">Protección de la identidad, reputación y seguridad de personas y organizaciones en el entorno online.</p>
+          <div class="service-expand">
+            <div class="service-detail">
+              <ul>
+                <li>Monitorización continua de presencia digital y exposición pública</li>
+                <li>Detección de suplantaciones, fraudes y campañas hostiles</li>
+                <li>Identificación de amenazas dirigidas y actores de riesgo</li>
+                <li>Respuesta temprana ante incidentes y reducción de superficie de ataque</li>
+              </ul>
+            </div>
+          </div>
+          <div class="service-arrow">↗</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section id="filosofia" style="padding:120px 60px;max-width:1320px;margin:0 auto">
+    <div class="phil-header">
+      <div class="reveal"><p class="section-label">Nuestra filosofía</p></div>
+      <div class="reveal" style="transition-delay:0.1s"><h2 class="section-title serif">Cinco pilares<br>que nos <em>definen</em></h2></div>
+      <div class="reveal" style="transition-delay:0.15s"><div class="section-divider"></div></div>
+    </div>
+    <div class="pillars">
+      <div class="reveal">
+        <div class="pillar">
+          <div class="pillar-num serif">01</div>
+          <div class="pillar-title serif">Seguridad basada en evidencia</div>
+          <div class="pillar-text">Todas nuestras acciones y recomendaciones se sustentan en datos verificables y análisis rigurosos.</div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.07s">
+        <div class="pillar">
+          <div class="pillar-num serif">02</div>
+          <div class="pillar-title serif">Inteligencia orientada a decisiones</div>
+          <div class="pillar-text">Proporcionamos información clara y útil para facilitar decisiones estratégicas.</div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.14s">
+        <div class="pillar">
+          <div class="pillar-num serif">03</div>
+          <div class="pillar-title serif">Transparencia y trazabilidad</div>
+          <div class="pillar-text">Procesos abiertos y auditables que refuerzan la confianza y la calidad.</div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.21s">
+        <div class="pillar">
+          <div class="pillar-num serif">04</div>
+          <div class="pillar-title serif">Innovación constante</div>
+          <div class="pillar-text">Incorporamos tecnologías y metodologías avanzadas para mantenernos siempre un paso adelante.</div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.28s">
+        <div class="pillar">
+          <div class="pillar-num serif">05</div>
+          <div class="pillar-title serif">Excelencia operativa</div>
+          <div class="pillar-text">Compromiso con la calidad, la eficiencia y la mejora continua en cada etapa.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section" id="equipo" style="padding:120px 60px">
+    <div class="team-header">
+      <div>
+        <div class="reveal"><p class="section-label">El equipo</p></div>
+        <div class="reveal" style="transition-delay:0.1s"><h2 class="section-title serif">Experiencia<br><em>institucional</em></h2></div>
+      </div>
+      <div class="reveal" style="transition-delay:0.2s">
+        <p style="font-size:14px;color:var(--text-dim);max-width:340px;line-height:1.7;text-align:right">
+          Profesionales con trayectoria en organismos nacionales de inteligencia y entornos operativos de alta exigencia.
+        </p>
+      </div>
+    </div>
+    <div class="team-grid">
+      <div class="reveal">
+        <div class="team-card" style="cursor:pointer" role="link" tabindex="0" aria-label="Ver perfil de José Manuel Prada" onclick="window.location.href='equipo-jose-manuel-prada.html'">
+          <div class="team-photo">
+            <img src="images/jmp.jpg" alt="Foto de José Manuel Prada" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top">
+          </div>
+          <p class="team-role">Director & Fundador</p>
+          <h3 class="team-name serif">José Manuel Prada</h3>
+          <p class="team-bio">Ex-miembro del Centro Nacional de Inteligencia (CNI). Especializado en análisis estratégico, gestión de riesgos y operaciones de seguridad. Visión profunda del ciclo de inteligencia en entornos de alta exigencia.</p>
+          <p style="margin-top:20px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);opacity:0.7">Ver perfil →</p>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.1s">
+        <div class="team-card" style="cursor:pointer" role="link" tabindex="0" aria-label="Ver perfil de Director de Seguridad" onclick="window.location.href='equipo-director-seguridad.html'">
+          <div class="team-photo">
+            <div class="team-photo-inner">DS</div>
+          </div>
+          <p class="team-role">Director de Seguridad</p>
+          <h3 class="team-name serif">Director de Seguridad</h3>
+          <p class="team-bio">Trayectoria en gestión de riesgos, protección de infraestructuras críticas y coordinación de equipos multidisciplinares. Especialista en inteligencia aplicada y entornos operativos de alta exigencia.</p>
+          <p style="margin-top:20px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);opacity:0.7">Ver perfil →</p>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.2s">
+        <div class="team-card" style="cursor:pointer" role="link" tabindex="0" aria-label="Ver perfil de Analista CTI" onclick="window.location.href='equipo-analista-cti.html'">
+          <div class="team-photo">
+            <div class="team-photo-inner">CTI</div>
+          </div>
+          <p class="team-role">Analista CTI</p>
+          <h3 class="team-name serif">Analista CTI</h3>
+          <p class="team-bio">Experta en OSINT con amplia experiencia en ciberseguridad, investigación digital y formación técnica para unidades operativas. Reconocida por su precisión metodológica y capacidad para generar inteligencia accionable.</p>
+          <p style="margin-top:20px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);opacity:0.7">Ver perfil →</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROP -->
+  <section style="padding:120px 60px">
+    <div style="max-width:1200px;margin:0 auto">
+      <div class="reveal"><p class="section-label">¿Qué aportamos?</p></div>
+      <div class="reveal" style="transition-delay:0.1s"><h2 class="section-title serif" style="margin-bottom:60px">Un paso por<br><em>delante</em></h2></div>
+      <div class="value-grid">
+        <div>
+          <div class="value-items">
+            <div class="reveal">
+              <div class="value-item">
+                <div class="value-icon"><div class="value-icon-inner"></div></div>
+                <div>
+                  <div class="value-item-title serif">Inteligencia no evidente</div>
+                  <div class="value-item-text">Sobre socios, clientes y perfiles clave para decisiones estratégicas.</div>
+                </div>
+              </div>
+            </div>
+            <div class="reveal" style="transition-delay:0.07s">
+              <div class="value-item">
+                <div class="value-icon"><div class="value-icon-inner"></div></div>
+                <div>
+                  <div class="value-item-title serif">Protección digital de perfiles sensibles</div>
+                  <div class="value-item-text">Reduciendo exposición y amenazas dirigidas con monitorización continua.</div>
+                </div>
+              </div>
+            </div>
+            <div class="reveal" style="transition-delay:0.14s">
+              <div class="value-item">
+                <div class="value-icon"><div class="value-icon-inner"></div></div>
+                <div>
+                  <div class="value-item-title serif">Información operativa contextualizada</div>
+                  <div class="value-item-text">Que refuerza decisiones críticas con contexto, interpretación y capacidad de acción.</div>
+                </div>
+              </div>
+            </div>
+            <div class="reveal" style="transition-delay:0.21s">
+              <div class="value-item">
+                <div class="value-icon"><div class="value-icon-inner"></div></div>
+                <div>
+                  <div class="value-item-title serif">Gestión proactiva del riesgo reputacional</div>
+                  <div class="value-item-text">Mediante monitorización y respuesta temprana ante incidentes.</div>
+                </div>
+              </div>
+            </div>
+            <div class="reveal" style="transition-delay:0.28s">
+              <div class="value-item">
+                <div class="value-icon"><div class="value-icon-inner"></div></div>
+                <div>
+                  <div class="value-item-title serif">Análisis de ciberamenazas</div>
+                  <div class="value-item-text">Para generar inteligencia accionable y anticipar vectores de riesgo.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal" style="transition-delay:0.2s">
+          <div class="value-callout">
+            <p class="callout-title serif">"Inteligencia que permite anticiparse, decidir con mayor precisión y proteger sus activos críticos."</p>
+            <p class="callout-text">Nuestros conocimientos especializados, junto al trabajo de personal con amplia experiencia en inteligencia, ciberseguridad y análisis operativo, nos permiten ofrecer una visión integral del riesgo y aportar información crítica para la toma de decisiones estratégicas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contacto" style="padding:120px 60px">
+    <div class="contact-inner">
+      <div>
+        <div class="reveal"><p class="section-label">Contacto</p></div>
+        <div class="reveal" style="transition-delay:0.1s"><h2 class="section-title serif">Hablemos de<br>su <em>seguridad</em></h2></div>
+        <div class="reveal" style="transition-delay:0.15s"><div class="section-divider"></div></div>
+        <div class="reveal" style="transition-delay:0.2s"><p class="body-text">¿Necesita proteger sus activos, anticipar riesgos o tomar decisiones con mayor certeza? Nuestro equipo está disponible para una consulta inicial confidencial.</p></div>
+      </div>
+      <div>
+        <div class="reveal">
+          <div class="contact-line">
+            <span class="contact-label">Contacto</span>
+            <span class="contact-value">José Manuel Prada</span>
+          </div>
+        </div>
+        <div class="reveal" style="transition-delay:0.1s">
+          <div class="contact-line">
+            <span class="contact-label">Email</span>
+            <span class="contact-value"><a href="mailto:jmp@prcintel.com">jmp@prcintel.com</a></span>
+          </div>
+        </div>
+        <div class="reveal" style="transition-delay:0.2s">
+          <div class="contact-line">
+            <span class="contact-label">Web</span>
+            <span class="contact-value"><a href="http://www.prcintel.com" target="_blank">www.prcintel.com</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="footer-logo">PRC Intel</div>
+      <p>Inteligencia estratégica, ciberseguridad y análisis operativo para organizaciones que necesitan anticiparse, protegerse y actuar con ventaja.</p>
+      <p style="margin-top:12px;font-size:12px">jmp@prcintel.com · www.prcintel.com</p>
+    </div>
+    <div>
+      <p class="footer-col-title">Navegación</p>
+      <ul class="footer-links">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#filosofia">Filosofía</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Servicios</p>
+      <ul class="footer-links">
+        <li><a href="#servicios">OSINT</a></li>
+        <li><a href="#servicios">HUMINT</a></li>
+        <li><a href="#servicios">Ciberinteligencia</a></li>
+        <li><a href="#servicios">Escolta Digital</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Legal</p>
+      <ul class="footer-links">
+        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+        <li><a href="privacidad.html">Política de Privacidad</a></li>
+        <li><a href="cookies.html">Política de Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="border-top:1px solid var(--border-dim)">
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 PRC Data &amp; Intelligence · Todos los derechos reservados</span>
+      <div class="footer-legal-links">
+        <a href="aviso-legal.html">Aviso Legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL (hidden, populated by JS) -->
+<div id="modal-overlay" class="modal-overlay" style="display:none" onclick="closeModal()">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">&#10005;</button>
+    <h2 id="modal-title" class="modal-title serif"></h2>
+    <p id="modal-subtitle" class="modal-subtitle"></p>
+    <div id="modal-body" class="modal-body"></div>
+  </div>
+</div>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" class="cookie-banner" style="display:none">
+  <p class="cookie-text">
+    Utilizamos cookies propias y de terceros para mejorar su experiencia. Puede aceptarlas, rechazarlas o consultar nuestra
+    <a onclick="openModal('cookies')">Política de Cookies</a> y
+    <a onclick="openModal('privacidad')">Política de Privacidad</a>.
+  </p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-reject" onclick="rejectCookies()">Rechazar</button>
+    <button class="cookie-btn cookie-btn-accept" onclick="acceptCookies()">Aceptar todas</button>
+  </div>
+</div>
+
+<!-- TWEAKS PANEL -->
+<div id="tweaks-panel" class="tweaks-panel">
+  <p class="tweaks-title">Tweaks</p>
+  <div class="tweak-group">
+    <p class="tweak-label">Paleta de color</p>
+    <div class="theme-options" id="theme-options">
+      <div class="theme-swatch" data-theme-id="gold" title="Navy &amp; Oro" style="background:#c9a84c"></div>
+      <div class="theme-swatch" data-theme-id="noir" title="Noir &amp; Cian" style="background:#4db8d4"></div>
+      <div class="theme-swatch" data-theme-id="slate" title="Slate &amp; Índigo" style="background:#7c8fff"></div>
+      <div class="theme-swatch" data-theme-id="platino" title="Platino" style="background:#4a5058"></div>
+    </div>
+    <p id="theme-label" style="font-size:11px;color:var(--text-dim);margin-top:8px"></p>
+  </div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  /* ── LEGAL CONTENT ── */
+  var LEGAL = {
+    aviso: {
+      title: "Aviso Legal",
+      subtitle: "Información legal",
+      content: '<p>En cumplimiento con el deber de información recogido en el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE), se informa:</p>' +
+        '<h3>Titular del sitio web</h3>' +
+        '<p><strong>Denominación social:</strong> PRC Data &amp; Intelligence<br><strong>Responsable:</strong> José Manuel Prada<br><strong>Email:</strong> jmp@prcintel.com<br><strong>Web:</strong> www.prcintel.com</p>' +
+        '<h3>Objeto</h3>' +
+        '<p>El presente sitio web tiene carácter informativo y comercial. PRC Data &amp; Intelligence se reserva el derecho a modificar, en cualquier momento, la presentación y configuración del sitio web, así como los presentes términos y condiciones.</p>' +
+        '<h3>Propiedad intelectual e industrial</h3>' +
+        '<p>Todos los contenidos del sitio web (textos, fotografías, gráficos, imágenes, tecnología, software, así como su diseño gráfico y códigos fuente) son propiedad de PRC Data &amp; Intelligence o de terceros, no pudiendo ser objeto de explotación, reproducción, distribución, modificación, comunicación pública, cesión o transformación sin el consentimiento previo y por escrito de los titulares.</p>' +
+        '<h3>Responsabilidad</h3>' +
+        '<p>PRC Data &amp; Intelligence no se responsabiliza de los daños producidos en el software y equipos informáticos de los usuarios o de terceros durante la prestación de los servicios del sitio web, ni de los daños producidos a terceros mediante la utilización ilícita del presente sitio web.</p>' +
+        '<h3>Legislación aplicable y jurisdicción</h3>' +
+        '<p>Las relaciones entre PRC Data &amp; Intelligence y los usuarios se regirán por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales de la ciudad de Madrid.</p>'
+    },
+    privacidad: {
+      title: "Política de Privacidad",
+      subtitle: "Protección de datos",
+      content: '<p>En cumplimiento del Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD), le informamos sobre el tratamiento de sus datos personales.</p>' +
+        '<h3>Responsable del tratamiento</h3>' +
+        '<p><strong>PRC Data &amp; Intelligence</strong> · José Manuel Prada · jmp@prcintel.com</p>' +
+        '<h3>Finalidad del tratamiento</h3>' +
+        '<p>Los datos personales que nos facilite serán tratados con las siguientes finalidades: gestión de consultas y solicitudes de información, prestación de los servicios contratados, y cumplimiento de obligaciones legales.</p>' +
+        '<h3>Legitimación</h3>' +
+        '<p>La base legal para el tratamiento de sus datos es el consentimiento del interesado, la ejecución de un contrato o el cumplimiento de obligaciones legales, según el caso.</p>' +
+        '<h3>Destinatarios</h3>' +
+        '<p>Los datos no serán cedidos a terceros salvo obligación legal. No se realizan transferencias internacionales de datos.</p>' +
+        '<h3>Derechos</h3>' +
+        '<p>Puede ejercitar sus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición enviando un escrito a jmp@prcintel.com, junto con una copia de su documento identificativo.</p>' +
+        '<h3>Conservación</h3>' +
+        '<p>Los datos se conservarán durante el tiempo necesario para la finalidad para la que fueron recabados y para cumplir con las obligaciones legales derivadas del tratamiento.</p>'
+    },
+    cookies: {
+      title: "Política de Cookies",
+      subtitle: "Uso de cookies",
+      content: '<p>Este sitio web utiliza cookies y tecnologías similares para mejorar la experiencia de navegación y analizar el uso del sitio.</p>' +
+        '<h3>¿Qué son las cookies?</h3>' +
+        '<p>Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita un sitio web. Permiten que el sitio recuerde sus preferencias y mejore su experiencia.</p>' +
+        '<h3>Tipos de cookies utilizadas</h3>' +
+        '<p><strong>Cookies técnicas (necesarias):</strong> Imprescindibles para el funcionamiento del sitio, como recordar el tema visual seleccionado. No requieren consentimiento.</p>' +
+        '<p>Este sitio web <strong>no utiliza cookies analíticas ni de seguimiento</strong> de terceros. No se instalan cookies publicitarias ni se comparte información de navegación con terceros.</p>' +
+        '<h3>Gestión de cookies</h3>' +
+        '<p>Puede aceptar o rechazar las cookies no técnicas mediante el banner que aparece en su primera visita. También puede configurar su navegador para bloquear o eliminar cookies, aunque esto puede afectar al funcionamiento del sitio.</p>' +
+        '<h3>Más información</h3>' +
+        '<p>Para cualquier consulta sobre nuestra política de cookies, puede contactar con nosotros en jmp@prcintel.com.</p>'
+    }
+  };
+
+  /* ── MODAL ── */
+  window.openModal = function(key) {
+    var data = LEGAL[key];
+    if (!data) return;
+    document.getElementById('modal-title').textContent = data.title;
+    document.getElementById('modal-subtitle').textContent = data.subtitle;
+    document.getElementById('modal-body').innerHTML = data.content;
+    document.getElementById('modal-overlay').style.display = '';
+  };
+  window.closeModal = function() {
+    document.getElementById('modal-overlay').style.display = 'none';
+  };
+
+  /* ── COOKIE BANNER ── */
+  var cookieBanner = document.getElementById('cookie-banner');
+  if (!localStorage.getItem('prc-cookies')) {
+    cookieBanner.style.display = '';
+  }
+  window.acceptCookies = function() {
+    localStorage.setItem('prc-cookies', 'accepted');
+    cookieBanner.style.display = 'none';
+  };
+  window.rejectCookies = function() {
+    localStorage.setItem('prc-cookies', 'rejected');
+    cookieBanner.style.display = 'none';
+  };
+
+  /* ── NAV SCROLL ── */
+  var navEl = document.querySelector('nav');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 60) {
+      navEl.classList.add('scrolled');
+    } else {
+      navEl.classList.remove('scrolled');
+    }
+  });
+
+  /* ── SMOOTH SCROLL for anchor links and data-scroll buttons ── */
+  function scrollTo(id) {
+    var el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      var id = this.getAttribute('href').slice(1);
+      if (id) {
+        e.preventDefault();
+        scrollTo(id);
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-scroll]').forEach(function(el) {
+    el.addEventListener('click', function() {
+      scrollTo(this.getAttribute('data-scroll'));
+    });
+  });
+
+  /* ── SCROLL REVEAL (IntersectionObserver) ── */
+  var reveals = document.querySelectorAll('.reveal');
+  var revealObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  reveals.forEach(function(el) {
+    revealObserver.observe(el);
+  });
+
+  /* ── SERVICE ACCORDION ── */
+  document.querySelectorAll('.service-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      var isActive = this.classList.contains('active');
+      // close all
+      document.querySelectorAll('.service-card').forEach(function(c) {
+        c.classList.remove('active');
+        c.setAttribute('aria-expanded', 'false');
+        c.querySelector('.service-expand').classList.remove('open');
+        c.querySelector('.service-arrow').textContent = '\u2197';
+      });
+      // open clicked if it wasn't active
+      if (!isActive) {
+        this.classList.add('active');
+        this.setAttribute('aria-expanded', 'true');
+        this.querySelector('.service-expand').classList.add('open');
+        this.querySelector('.service-arrow').textContent = '\u2191';
+      }
+    });
+  });
+
+  /* ── THEME SWITCHER ── */
+  var themeNames = { gold: 'Navy & Oro', noir: 'Noir & Cian', slate: 'Slate & Índigo', platino: 'Platino' };
+  var currentTheme = localStorage.getItem('prc-theme') || 'platino';
+
+  function applyTheme(id) {
+    currentTheme = id;
+    if (id === 'gold') {
+      document.documentElement.removeAttribute('data-theme');
+    } else {
+      document.documentElement.setAttribute('data-theme', id);
+    }
+    localStorage.setItem('prc-theme', id);
+    // update swatches
+    document.querySelectorAll('.theme-swatch').forEach(function(sw) {
+      sw.classList.toggle('active', sw.getAttribute('data-theme-id') === id);
+    });
+    document.getElementById('theme-label').textContent = themeNames[id] || '';
+  }
+
+  // init swatches
+  applyTheme(currentTheme);
+
+  document.querySelectorAll('.theme-swatch').forEach(function(sw) {
+    sw.addEventListener('click', function() {
+      applyTheme(this.getAttribute('data-theme-id'));
+    });
+  });
+
+  // Listen for edit-mode messages (tweaks panel toggle)
+  window.addEventListener('message', function(e) {
+    if (e.data && e.data.type === '__activate_edit_mode') {
+      document.getElementById('tweaks-panel').classList.add('open');
+    }
+    if (e.data && e.data.type === '__deactivate_edit_mode') {
+      document.getElementById('tweaks-panel').classList.remove('open');
+    }
+  });
+  window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+
+  /* ── GLOBE 3D CANVAS ── */
+  (function() {
+    var canvas = document.getElementById('globe-canvas');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    var N = 180;
+    var R = 220;
+    var CONNECTION_DIST = 0.52;
+    var MAX_PULSES = 6;
+    var mouseX = 0, mouseY = 0;
+
+    // Fibonacci sphere
+    var pts3d = [];
+    var golden = Math.PI * (3 - Math.sqrt(5));
+    for (var i = 0; i < N; i++) {
+      var y = 1 - (i / (N - 1)) * 2;
+      var r = Math.sqrt(1 - y * y);
+      var theta = golden * i;
+      pts3d.push([Math.cos(theta) * r, y, Math.sin(theta) * r]);
+    }
+
+    // Precompute edges
+    var edges = [];
+    for (var i = 0; i < N; i++) {
+      for (var j = i + 1; j < N; j++) {
+        var ax = pts3d[i][0], ay = pts3d[i][1], az = pts3d[i][2];
+        var bx = pts3d[j][0], by = pts3d[j][1], bz = pts3d[j][2];
+        var dot = ax*bx + ay*by + az*bz;
+        var ang = Math.acos(Math.max(-1, Math.min(1, dot)));
+        if (ang < CONNECTION_DIST) edges.push([i, j, 1 - ang / CONNECTION_DIST]);
+      }
+    }
+
+    // Adjacency
+    var nodeEdges = [];
+    for (var i = 0; i < N; i++) nodeEdges.push([]);
+    for (var idx = 0; idx < edges.length; idx++) {
+      var e = edges[idx];
+      nodeEdges[e[0]].push({ idx: idx, other: e[1] });
+      nodeEdges[e[1]].push({ idx: idx, other: e[0] });
+    }
+
+    var pulses = [];
+    var nodeFlash = new Array(N).fill(null);
+    var lastArrival = new Array(N).fill(-999);
+    var frame = 0;
+
+    function getAccent() {
+      var v = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+      return v || '#c9a84c';
+    }
+
+    function hexToRgb(hex) {
+      var clean = hex.trim().replace(/^#/, '');
+      var full = clean.length === 3 ? clean.split('').map(function(c){return c+c}).join('') : clean;
+      var rr = /^([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(full);
+      return rr ? [parseInt(rr[1],16), parseInt(rr[2],16), parseInt(rr[3],16)] : [201,168,76];
+    }
+
+    function spawnPulse(from, excludeEdge) {
+      if (excludeEdge === undefined) excludeEdge = -1;
+      var candidates = nodeEdges[from].filter(function(e){ return e.idx !== excludeEdge; });
+      if (!candidates.length) return;
+      var chosen = candidates[Math.floor(Math.random() * candidates.length)];
+      pulses.push({
+        from: from, to: chosen.other,
+        edgeIdx: chosen.idx,
+        t: 0,
+        speed: 0.012 + Math.random() * 0.018,
+        trail: []
+      });
+    }
+
+    // Seed initial pulses
+    for (var s = 0; s < 3; s++) spawnPulse(Math.floor(Math.random() * N));
+
+    function rotY(pts, a) {
+      var c = Math.cos(a), s = Math.sin(a);
+      return pts.map(function(p){ return [c*p[0] + s*p[2], p[1], -s*p[0] + c*p[2]]; });
+    }
+    function rotX(pts, a) {
+      var c = Math.cos(a), s = Math.sin(a);
+      return pts.map(function(p){ return [p[0], c*p[1] - s*p[2], s*p[1] + c*p[2]]; });
+    }
+
+    function resize() {
+      var W = canvas.parentElement.offsetWidth;
+      var H = canvas.parentElement.offsetHeight;
+      canvas.width = W;
+      canvas.height = H;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    canvas.addEventListener('mousemove', function(e) {
+      var rect = canvas.getBoundingClientRect();
+      mouseX = (e.clientX - rect.left - canvas.width / 2) / canvas.width;
+      mouseY = (e.clientY - rect.top - canvas.height / 2) / canvas.height;
+    });
+
+    var rotAngle = 0;
+    var rafId;
+
+    function draw() {
+      rafId = requestAnimationFrame(draw);
+      frame++;
+      resize();
+      var W = canvas.width, H = canvas.height;
+      ctx.clearRect(0, 0, W, H);
+
+      var mx = mouseX * 0.4;
+      var my = mouseY * 0.3;
+      rotAngle += 0.003;
+
+      var pts = rotY(pts3d, rotAngle + mx);
+      pts = rotX(pts, -0.18 + my);
+
+      var cx = W * 0.72, cy = H * 0.5;
+      var fov = 700;
+
+      function project(p) {
+        var scale = fov / (fov + p[2] * R);
+        return [cx + p[0] * R * scale, cy + p[1] * R * scale, p[2], scale];
+      }
+
+      var projected = pts.map(project);
+
+      // Spawn new pulses occasionally
+      if (frame % 120 === 0 && pulses.length < MAX_PULSES)
+        spawnPulse(Math.floor(Math.random() * N));
+
+      var accent = getAccent();
+      var rgb = hexToRgb(accent);
+      var ar = rgb[0], ag = rgb[1], ab = rgb[2];
+
+      // Advance pulses
+      for (var k = pulses.length - 1; k >= 0; k--) {
+        var p = pulses[k];
+        var px1 = projected[p.from][0], py1 = projected[p.from][1];
+        var px2 = projected[p.to][0], py2 = projected[p.to][1];
+        var cx2 = px1 + (px2 - px1) * p.t;
+        var cy2 = py1 + (py2 - py1) * p.t;
+        p.trail.push([cx2, cy2]);
+        if (p.trail.length > 12) p.trail.shift();
+        p.t += p.speed;
+
+        if (p.t >= 1) {
+          var dest = p.to;
+          var timeSinceLastArrival = frame - lastArrival[dest];
+          lastArrival[dest] = frame;
+          var isConfluence = timeSinceLastArrival < 40;
+          nodeFlash[dest] = {
+            age: 0,
+            maxAge: isConfluence ? 40 : 20,
+            intensity: isConfluence ? 1.0 : 0.5,
+            confluence: isConfluence
+          };
+          pulses.splice(k, 1);
+          if (pulses.length < MAX_PULSES && Math.random() < 0.5)
+            spawnPulse(dest, p.edgeIdx);
+        }
+      }
+
+      // Draw edges
+      var activeEdges = {};
+      for (var pi = 0; pi < pulses.length; pi++) activeEdges[pulses[pi].edgeIdx] = true;
+
+      for (var ei = 0; ei < edges.length; ei++) {
+        var edge = edges[ei];
+        var i = edge[0], j = edge[1], strength = edge[2];
+        var p1 = projected[i], p2 = projected[j];
+        var depth = ((p1[2] + p2[2]) / 2 + 1) / 2;
+        var isActive = activeEdges[ei] || false;
+        var alpha = depth * depth * strength * (isActive ? 0.55 : 0.18);
+        if (alpha < 0.004) continue;
+        ctx.beginPath();
+        ctx.moveTo(p1[0], p1[1]);
+        ctx.lineTo(p2[0], p2[1]);
+        ctx.strokeStyle = 'rgba(' + ar + ',' + ag + ',' + ab + ',' + alpha + ')';
+        ctx.lineWidth = isActive ? 1.2 : 0.5;
+        ctx.stroke();
+      }
+
+      // Draw pulse trails + heads
+      for (var pi = 0; pi < pulses.length; pi++) {
+        var p = pulses[pi];
+        if (p.trail.length < 2) continue;
+        var pz1 = projected[p.from][2], pz2 = projected[p.to][2];
+        var depth = ((pz1 + pz2) / 2 + 1) / 2;
+        if (depth < 0.1) continue;
+
+        // Trail
+        for (var ti = 1; ti < p.trail.length; ti++) {
+          var frac = ti / p.trail.length;
+          ctx.beginPath();
+          ctx.moveTo(p.trail[ti - 1][0], p.trail[ti - 1][1]);
+          ctx.lineTo(p.trail[ti][0], p.trail[ti][1]);
+          ctx.strokeStyle = 'rgba(' + ar + ',' + ag + ',' + ab + ',' + (frac * frac * 0.7 * depth) + ')';
+          ctx.lineWidth = frac * 2.5;
+          ctx.stroke();
+        }
+
+        // Head glow
+        var hx = p.trail[p.trail.length - 1][0];
+        var hy = p.trail[p.trail.length - 1][1];
+        var grd = ctx.createRadialGradient(hx, hy, 0, hx, hy, 7 * depth);
+        grd.addColorStop(0, 'rgba(' + ar + ',' + ag + ',' + ab + ',' + (0.95 * depth) + ')');
+        grd.addColorStop(0.4, 'rgba(' + ar + ',' + ag + ',' + ab + ',' + (0.4 * depth) + ')');
+        grd.addColorStop(1, 'rgba(' + ar + ',' + ag + ',' + ab + ',0)');
+        ctx.beginPath();
+        ctx.arc(hx, hy, 7 * depth, 0, Math.PI * 2);
+        ctx.fillStyle = grd;
+        ctx.fill();
+      }
+
+      // Node flashes
+      for (var ni = 0; ni < N; ni++) {
+        var f = nodeFlash[ni];
+        if (!f) continue;
+        f.age++;
+        if (f.age > f.maxAge) { nodeFlash[ni] = null; continue; }
+        var np = projected[ni];
+        var depth = (np[2] + 1) / 2;
+        var life = 1 - f.age / f.maxAge;
+        var alpha = life * f.intensity * depth;
+        var radius = f.confluence
+          ? (4 + (1 - life) * 28) * depth
+          : (3 + (1 - life) * 14) * depth;
+        var grd = ctx.createRadialGradient(np[0], np[1], 0, np[0], np[1], radius);
+        grd.addColorStop(0, 'rgba(' + ar + ',' + ag + ',' + ab + ',' + alpha + ')');
+        grd.addColorStop(0.5, 'rgba(' + ar + ',' + ag + ',' + ab + ',' + (alpha * 0.4) + ')');
+        grd.addColorStop(1, 'rgba(' + ar + ',' + ag + ',' + ab + ',0)');
+        ctx.beginPath();
+        ctx.arc(np[0], np[1], radius, 0, Math.PI * 2);
+        ctx.fillStyle = grd;
+        ctx.fill();
+        if (f.confluence && life > 0.5) {
+          ctx.beginPath();
+          ctx.arc(np[0], np[1], 3 * depth, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255,255,255,' + ((life - 0.5) * 2 * alpha) + ')';
+          ctx.fill();
+        }
+      }
+
+      // Draw nodes
+      for (var i = 0; i < N; i++) {
+        var pp = projected[i];
+        var depth = (pp[2] + 1) / 2;
+        var alpha = depth * depth * 0.85 + 0.05;
+        var rr = (depth > 0.7 ? 2.2 : 1.2) * pp[3];
+        ctx.beginPath();
+        ctx.arc(pp[0], pp[1], rr, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(' + ar + ',' + ag + ',' + ab + ',' + (alpha * 0.7) + ')';
+        ctx.fill();
+      }
+
+      // Outer glow ring
+      var grd = ctx.createRadialGradient(cx, cy, R * 0.85, cx, cy, R * 1.15);
+      grd.addColorStop(0, 'rgba(' + ar + ',' + ag + ',' + ab + ',0)');
+      grd.addColorStop(0.5, 'rgba(' + ar + ',' + ag + ',' + ab + ',0.04)');
+      grd.addColorStop(1, 'rgba(' + ar + ',' + ag + ',' + ab + ',0)');
+      ctx.beginPath();
+      ctx.arc(cx, cy, R * 1.05, 0, Math.PI * 2);
+      ctx.fillStyle = grd;
+      ctx.fill();
+    }
+
+    draw();
+  })();
+
+})();
+</script>
+
+</body>
+</html>
