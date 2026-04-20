@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- ═══════════════ SEO PRIMARIO ═══════════════ -->
+<title>PRC Data & Intelligence · OSINT, Ciberinteligencia y Análisis Estratégico</title>
+<meta name="description" content="Inteligencia estratégica, OSINT, HUMINT, ciberinteligencia y escolta digital. Análisis operativo para anticipar riesgos y proteger activos críticos. Equipo con trayectoria en organismos nacionales de inteligencia.">
+<meta name="keywords" content="OSINT, HUMINT, ciberinteligencia, escolta digital, inteligencia estratégica, análisis de riesgos, ciberseguridad, investigación digital, CTI, threat intelligence, PRC Intel">
+<meta name="author" content="PRC Data & Intelligence">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<meta name="language" content="Spanish">
+<meta name="geo.region" content="ES">
+<meta name="geo.placename" content="España">
+<link rel="canonical" href="https://www.prcintel.com/">
+<link rel="alternate" hreflang="es-ES" href="https://www.prcintel.com/">
+<link rel="alternate" hreflang="es" href="https://www.prcintel.com/">
+<link rel="alternate" hreflang="x-default" href="https://www.prcintel.com/">
+
+<!-- ═══════════════ OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ═══════════════ -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PRC Data & Intelligence">
+<meta property="og:title" content="PRC Data & Intelligence · Inteligencia estratégica y ciberinteligencia">
+<meta property="og:description" content="OSINT, HUMINT, ciberinteligencia y escolta digital. Transformamos datos en ventaja estratégica para proteger sus activos críticos.">
+<meta property="og:url" content="https://www.prcintel.com/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://www.prcintel.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PRC Data & Intelligence — Inteligencia estratégica, OSINT y ciberinteligencia">
+
+<!-- ═══════════════ TWITTER / X CARD ═══════════════ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PRC Data & Intelligence">
+<meta name="twitter:description" content="OSINT, HUMINT, ciberinteligencia y escolta digital. Inteligencia que permite anticiparse, decidir con precisión y proteger activos críticos.">
+<meta name="twitter:image" content="https://www.prcintel.com/og-image.jpg">
+<meta name="twitter:image:alt" content="PRC Data & Intelligence — Inteligencia estratégica">
+
+<!-- ═══════════════ THEME COLOR ═══════════════ -->
+<meta name="theme-color" content="#f4f3f1">
+<meta name="color-scheme" content="light">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="PRC Intel">
+
+<!-- ═══════════════ FAVICON (SVG inline, sin petición HTTP extra) ═══════════════ -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f4f3f1'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='60' font-weight='300' fill='%234a5058' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f4f3f1'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='60' font-weight='300' fill='%234a5058' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+
+<!-- ═══════════════ PRECONNECT / DNS-PREFETCH ═══════════════ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="dns-prefetch" href="https://unpkg.com">
+
+<!-- ═══════════════ FUENTES (con font-display:swap para evitar FOIT) ═══════════════ -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@300;400;500&display=swap"></noscript>
+
+<!-- ═══════════════ JSON-LD / SCHEMA.ORG ═══════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.prcintel.com/#organization",
+      "name": "PRC Data & Intelligence",
+      "alternateName": "PRC Intel",
+      "url": "https://www.prcintel.com/",
+      "email": "jmp@prcintel.com",
+      "description": "Inteligencia estratégica, ciberseguridad y análisis operativo para organizaciones que necesitan anticiparse, protegerse y actuar con ventaja.",
+      "foundingDate": "2026",
+      "areaServed": {
+        "@type": "Country",
+        "name": "España"
+      },
+      "knowsAbout": ["OSINT", "HUMINT", "Ciberinteligencia", "Threat Intelligence", "Análisis de riesgos", "Ciberseguridad", "Inteligencia estratégica", "Escolta Digital"],
+      "founder": {
+        "@type": "Person",
+        "name": "José Manuel Prada"
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.prcintel.com/#service",
+      "name": "PRC Data & Intelligence",
+      "url": "https://www.prcintel.com/",
+      "image": "https://www.prcintel.com/og-image.jpg",
+      "priceRange": "$$$",
+      "serviceType": ["OSINT", "HUMINT", "Ciberinteligencia", "Escolta Digital"],
+      "provider": { "@id": "https://www.prcintel.com/#organization" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de inteligencia y ciberseguridad",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "OSINT", "description": "Investigaciones avanzadas basadas en fuentes abiertas, accesibles de forma legal y pública." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "HUMINT", "description": "Inteligencia humana para obtener perspectivas que los datos digitales no pueden revelar." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ciberinteligencia", "description": "Identificación, análisis y anticipación de amenazas en el entorno digital." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Escolta Digital", "description": "Protección de identidad, reputación y seguridad en el entorno online." } }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.prcintel.com/#website",
+      "url": "https://www.prcintel.com/",
+      "name": "PRC Data & Intelligence",
+      "description": "Inteligencia estratégica, ciberseguridad y análisis operativo.",
+      "publisher": { "@id": "https://www.prcintel.com/#organization" },
+      "inLanguage": "es-ES"
+    }
+  ]
+}
+</script>
+
+<!-- ═══════════════ REACT PRODUCTION (UMD, sin Babel en cliente) ═══════════════ -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous" defer></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous" defer></script>
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; font-weight: 300; overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* ── ACCESIBILIDAD ── */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+:focus:not(:focus-visible) { outline: none; }
+.skip-link { position: absolute; top: -40px; left: 0; background: var(--accent); color: var(--bg); padding: 10px 16px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; z-index: 9999; transition: top 0.2s; }
+.skip-link:focus { top: 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+/* ── FALLBACK SEO: contenido visible solo hasta que React hidrata ── */
+#seo-fallback { position: absolute; left: -99999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* ── PREFERS-REDUCED-MOTION ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .scroll-line { animation: none !important; }
+}
+
+/* THEME */
+:root {
+  --bg: #f4f3f1;
+  --bg2: #eceae6;
+  --bg3: #e2dfda;
+  --accent: #4a5058;
+  --accent2: #2e3138;
+  --text: #18191c;
+  --text-dim: #6a6d74;
+  --text-mid: #3f434a;
+  --border: rgba(74,80,88,0.24);
+  --border-dim: rgba(0,0,0,0.08);
+  --nav-blur: rgba(244,243,241,0.94);
+}
+
+/* TYPOGRAPHY */
+.serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 60px; height: 72px;
+  background: var(--nav-blur); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-dim);
+  transition: all 0.4s;
+}
+nav.scrolled { height: 60px; }
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; letter-spacing: 0.12em; color: var(--accent); text-transform: uppercase; }
+.nav-links { display: flex; gap: 40px; }
+.nav-links a { color: var(--text-mid); font-size: 12px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: color 0.3s; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.nav-links a:hover { color: var(--accent); }
+.nav-cta { -webkit-appearance: none; background: transparent; border: 1px solid var(--accent); color: var(--accent); padding: 8px 24px; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: all 0.3s; -webkit-tap-highlight-color: transparent; }
+.nav-cta:hover { background: var(--accent); color: var(--bg); }
+
+/* REVEAL */
+.reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(.16,1,.3,1), transform 0.8s cubic-bezier(.16,1,.3,1); }
+.reveal.visible { opacity: 1; transform: none; }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: 100svh;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+  background: radial-gradient(ellipse 80% 60% at 60% 40%, var(--bg3) 0%, var(--bg) 70%);
+}
+.hero-grid {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: linear-gradient(var(--border-dim) 1px, transparent 1px), linear-gradient(90deg, var(--border-dim) 1px, transparent 1px);
+  background-size: 80px 80px;
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+.hero-content { text-align: center; z-index: 1; padding: 0 20px; }
+.hero-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--accent); margin-bottom: 28px; }
+.hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(72px, 10vw, 130px); font-weight: 300; line-height: 0.92; color: var(--text); margin-bottom: 12px; }
+.hero-title em { font-style: italic; color: var(--accent); }
+.hero-subtitle { font-family: 'Cormorant Garamond', serif; font-size: clamp(22px, 3vw, 34px); font-weight: 300; font-style: italic; color: var(--text-mid); margin-bottom: 56px; letter-spacing: 0.02em; }
+.hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn-primary { -webkit-appearance: none; background: var(--accent); color: var(--bg); padding: 14px 40px; font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; border: none; cursor: pointer; transition: all 0.3s; -webkit-tap-highlight-color: transparent; }
+.btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+.btn-outline { -webkit-appearance: none; background: transparent; border: 1px solid var(--border); color: var(--text); padding: 14px 40px; font-size: 11px; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; transition: all 0.3s; -webkit-tap-highlight-color: transparent; }
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+.hero-scroll { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; color: var(--text-dim); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; }
+.scroll-line { width: 1px; height: 50px; background: linear-gradient(var(--accent), transparent); animation: scrollpulse 2s ease-in-out infinite; }
+@keyframes scrollpulse { 0%,100%{opacity:0.3} 50%{opacity:1} }
+
+/* SECTION BASE */
+section { padding: 120px 60px; }
+.section-label { font-size: 10px; font-weight: 500; letter-spacing: 0.35em; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; }
+.section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(42px, 6vw, 76px); font-weight: 300; line-height: 1.05; color: var(--text); }
+.section-title em { font-style: italic; color: var(--accent); }
+.section-divider { width: 48px; height: 1px; background: var(--accent); margin: 32px 0; opacity: 0.6; }
+.body-text { font-size: 15px; font-weight: 300; line-height: 1.85; color: var(--text-mid); max-width: 560px; }
+
+/* ABOUT */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: start; max-width: 1200px; margin: 0 auto; }
+.objectives-list { list-style: none; display: flex; flex-direction: column; gap: 24px; margin-top: 40px; }
+.obj-item { display: flex; gap: 20px; align-items: flex-start; padding: 24px; border: 1px solid var(--border-dim); transition: border-color 0.3s, background 0.3s; }
+.obj-item:hover { border-color: var(--border); background: rgba(255,255,255,0.02); }
+.obj-num { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 300; color: var(--accent); opacity: 0.5; line-height: 1; min-width: 32px; }
+.obj-text { font-size: 14px; font-weight: 300; color: var(--text-mid); line-height: 1.7; }
+
+/* SERVICES */
+.services-section { background: var(--bg2); }
+.services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; margin-top: 60px; max-width: 1200px; margin-left: auto; margin-right: auto; }
+.service-card { background: var(--bg); padding: 48px; cursor: pointer; transition: background 0.3s; position: relative; overflow: hidden; border: 1px solid var(--border-dim); }
+.service-card::before { content:''; position: absolute; top:0; left:0; right:0; height: 2px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 0.4s cubic-bezier(.16,1,.3,1); }
+.service-card:hover::before, .service-card.active::before { transform: scaleX(1); }
+.service-card:hover, .service-card.active { background: var(--bg3); }
+.service-tag { font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
+.service-name { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 300; color: var(--text); margin-bottom: 16px; line-height: 1.1; }
+.service-summary { font-size: 14px; color: var(--text-dim); line-height: 1.7; }
+.service-expand { overflow: hidden; max-height: 0; transition: max-height 0.5s cubic-bezier(.16,1,.3,1); }
+.service-expand.open { max-height: 400px; }
+.service-detail { padding-top: 24px; border-top: 1px solid var(--border-dim); margin-top: 24px; }
+.service-detail ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.service-detail li { font-size: 13px; font-weight: 300; color: var(--text-mid); padding-left: 16px; position: relative; }
+.service-detail li::before { content:'—'; position: absolute; left: 0; color: var(--accent); opacity: 0.6; }
+.service-arrow { position: absolute; bottom: 24px; right: 24px; font-size: 20px; color: var(--accent); opacity: 0.4; transition: all 0.3s; }
+.service-card:hover .service-arrow { opacity: 1; transform: translate(2px, -2px); }
+
+/* PHILOSOPHY */
+.phil-header { max-width: 600px; margin-bottom: 80px; }
+.pillars { display: flex; gap: 0; max-width: 1200px; margin: 0 auto; position: relative; }
+.pillar { flex: 1; padding: 40px 32px 40px; border-left: 1px solid var(--border-dim); position: relative; transition: background 0.3s; }
+.pillar:hover { background: var(--bg2); }
+.pillar-num { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 300; color: var(--accent); opacity: 0.2; line-height: 1; margin-bottom: 8px; }
+.pillar-title { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 600; color: var(--text); margin-bottom: 12px; line-height: 1.3; }
+.pillar-text { font-size: 13px; color: var(--text-dim); line-height: 1.7; }
+
+/* TEAM */
+.team-section { background: var(--bg2); }
+.team-header { max-width: 1200px; margin: 0 auto 60px; display: flex; align-items: flex-end; justify-content: space-between; }
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; max-width: 1200px; margin: 0 auto; align-items: stretch; }
+.team-grid > div { display: flex; flex-direction: column; }
+.team-card { background: var(--bg); padding: 40px 36px; border: 1px solid var(--border-dim); transition: border-color 0.3s; flex: 1; }
+.team-card:hover { border-color: var(--border); }
+.team-photo { width: 72px; height: 72px; border-radius: 50%; background: var(--bg3); border: 1px solid var(--border); margin-bottom: 28px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.team-photo-inner { width: 100%; height: 100%; background: linear-gradient(135deg, var(--bg3), var(--bg2)); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--accent); opacity: 0.6; }
+.team-role { font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; font-weight: 500; }
+.team-name { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 400; color: var(--text); margin-bottom: 16px; }
+.team-bio { font-size: 13px; color: var(--text-dim); line-height: 1.75; }
+
+/* VALUE PROP */
+.value-section { max-width: 1200px; margin: 0 auto; }
+.value-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.value-items { display: flex; flex-direction: column; gap: 0; }
+.value-item { padding: 28px 0; border-bottom: 1px solid var(--border-dim); display: flex; gap: 24px; align-items: flex-start; }
+.value-icon { width: 32px; height: 32px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.value-icon-inner { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
+.value-item-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; color: var(--text); margin-bottom: 6px; }
+.value-item-text { font-size: 13px; color: var(--text-dim); line-height: 1.7; }
+.value-callout { background: var(--bg2); border: 1px solid var(--border-dim); padding: 48px; }
+.callout-title { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300; font-style: italic; color: var(--text); margin-bottom: 20px; line-height: 1.3; }
+.callout-text { font-size: 14px; color: var(--text-mid); line-height: 1.8; }
+
+/* CONTACT */
+.contact-section { background: var(--bg2); }
+.contact-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+.contact-line { display: flex; align-items: center; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--border-dim); }
+.contact-label { font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--accent); min-width: 80px; }
+.contact-value { font-size: 15px; color: var(--text); font-weight: 300; }
+.contact-value a { color: var(--text); text-decoration: none; transition: color 0.3s; }
+.contact-value a:hover { color: var(--accent); }
+
+/* FOOTER */
+footer { border-top: 1px solid var(--border-dim); background: var(--bg); }
+.footer-main { padding: 60px 60px 40px; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 60px; max-width: 1320px; margin: 0 auto; }
+.footer-brand p { font-size: 13px; color: var(--text-dim); line-height: 1.8; margin-top: 16px; max-width: 260px; }
+.footer-col-title { font-size: 10px; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; }
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-links a { font-size: 13px; color: var(--text-dim); text-decoration: none; transition: color 0.25s; cursor: pointer; }
+.footer-links a:hover { color: var(--text); }
+.footer-bottom { border-top: 1px solid var(--border-dim); padding: 20px 60px; max-width: 1320px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 600; letter-spacing: 0.15em; color: var(--accent); text-transform: uppercase; }
+.footer-legal-links { display: flex; gap: 28px; flex-wrap: wrap; }
+.footer-legal-links a { font-size: 11px; color: var(--text-dim); text-decoration: none; transition: color 0.25s; cursor: pointer; letter-spacing: 0.03em; }
+.footer-legal-links a:hover { color: var(--text); }
+.footer-copy { font-size: 11px; color: var(--text-dim); letter-spacing: 0.03em; }
+
+/* MODAL */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 300; display: flex; align-items: center; justify-content: center; padding: 24px; backdrop-filter: blur(4px); }
+.modal-box { background: var(--bg2); border: 1px solid var(--border-dim); max-width: 680px; width: 100%; max-height: 80vh; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 48px; position: relative; }
+.modal-box::-webkit-scrollbar { width: 4px; }
+.modal-box::-webkit-scrollbar-thumb { background: var(--border); }
+.modal-close { position: absolute; top: 20px; right: 24px; background: none; border: none; color: var(--text-dim); font-size: 20px; cursor: pointer; transition: color 0.2s; }
+.modal-close:hover { color: var(--text); }
+.modal-title { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300; color: var(--text); margin-bottom: 8px; }
+.modal-subtitle { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 32px; }
+.modal-body { font-size: 13px; color: var(--text-mid); line-height: 1.85; }
+.modal-body h3 { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 400; color: var(--text); margin: 28px 0 10px; }
+.modal-body p { margin-bottom: 14px; }
+
+/* COOKIE BANNER */
+.cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; z-index: 250; background: var(--bg2); border-top: 1px solid var(--border-dim); padding: 20px 60px; display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+.cookie-text { font-size: 13px; color: var(--text-mid); line-height: 1.6; flex: 1; min-width: 280px; }
+.cookie-text a { color: var(--accent); text-decoration: none; cursor: pointer; }
+.cookie-actions { display: flex; gap: 12px; flex-shrink: 0; }
+.cookie-btn { padding: 10px 24px; font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: all 0.25s; border: none; }
+.cookie-btn-accept { background: var(--accent); color: var(--bg); }
+.cookie-btn-accept:hover { opacity: 0.85; }
+.cookie-btn-reject { background: transparent; border: 1px solid var(--border-dim); color: var(--text-dim); }
+.cookie-btn-reject:hover { border-color: var(--border); color: var(--text); }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  nav { padding: 0 20px; }
+  .nav-links { display: none; }
+  .nav-cta { padding: 7px 16px; font-size: 10px; }
+
+  .hero-content { padding: 0 24px; }
+  .hero-scroll { display: none; }
+
+  section { padding: 72px 24px; }
+
+  /* About */
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+
+  /* Services */
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card { padding: 32px 24px; }
+
+  /* Philosophy */
+  .pillars { flex-direction: column; }
+  .pillar { border-left: none; border-top: 1px solid var(--border-dim); padding: 28px 0; }
+
+  /* Team */
+  .team-grid { grid-template-columns: 1fr; }
+  .team-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .team-header p { text-align: left; }
+
+  /* Value */
+  .value-grid { grid-template-columns: 1fr; gap: 48px; }
+  .value-callout { padding: 32px 24px; }
+
+  /* Contact */
+  .contact-inner { grid-template-columns: 1fr; gap: 48px; }
+
+  /* Footer */
+  .footer-main { grid-template-columns: 1fr 1fr; gap: 40px; padding: 48px 24px 32px; }
+  .footer-bottom { padding: 20px 24px; flex-direction: column; align-items: flex-start; gap: 16px; }
+  .footer-legal-links { flex-wrap: wrap; gap: 16px; }
+}
+
+@media (max-width: 480px) {
+  nav { height: 60px; }
+  .nav-logo { font-size: 16px; }
+
+  .hero-title { line-height: 0.95; }
+
+  .hero-actions { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-outline { width: 100%; max-width: 280px; text-align: center; }
+
+  .about-grid { padding: 72px 20px; }
+  .obj-item { padding: 16px; }
+
+  .footer-main { grid-template-columns: 1fr; gap: 32px; padding: 40px 20px 28px; }
+
+  .section-title { line-height: 1.08; }
+  .callout-title { font-size: 24px; }
+
+  .contact-line { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .contact-label { min-width: unset; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+<div id="root">
+  <!-- ═══════════════ FALLBACK SEO ═══════════════
+       Contenido estático para crawlers (Bing, bots sociales, etc.) y
+       lectores de pantalla antes de la hidratación de React. React
+       reemplazará este contenido al montarse. Oculto visualmente con
+       clip-path sr-only para no causar FOUC apreciable. -->
+  <div id="seo-fallback" role="presentation" aria-hidden="false">
+    <header>
+      <p>Inteligencia · Seguridad · Decisión</p>
+      <h1>PRC Data &amp; Intelligence</h1>
+      <p>Transformamos datos en ventaja estratégica</p>
+    </header>
+
+    <section>
+      <h2>Expertos en inteligencia</h2>
+      <p>Somos especialistas en OSINT y ciberinteligencia, dos pilares esenciales para el desarrollo de estrategias de seguridad eficaces, proactivas y orientadas a la toma de decisiones. Nuestro equipo multidisciplinar trabaja con un compromiso firme hacia la seguridad, la transparencia y la excelencia operativa. Aplicamos herramientas avanzadas para transformar grandes volúmenes de datos en inteligencia accionable.</p>
+    </section>
+
+    <section>
+      <h2>Nuestros servicios</h2>
+      <article>
+        <h3>OSINT — Inteligencia de fuentes abiertas</h3>
+        <p>Investigaciones avanzadas basadas en fuentes abiertas, accesibles de forma legal y pública. Identificación de amenazas, análisis de presencia digital, investigación de fraude, monitorización de redes sociales y capas profundas de la red, preservación de evidencias digitales y elaboración de perfiles y mapas de riesgo.</p>
+      </article>
+      <article>
+        <h3>HUMINT — Inteligencia humana</h3>
+        <p>Capacidades avanzadas en inteligencia humana para obtener perspectivas que los datos digitales no pueden revelar. Análisis de comportamientos, relaciones y dinámicas de influencia, obtención de información contextual en entornos complejos, validación y contraste de hipótesis mediante fuentes cualificadas.</p>
+      </article>
+      <article>
+        <h3>Ciberinteligencia</h3>
+        <p>Identificación, análisis y anticipación de amenazas en el entorno digital para respaldar decisiones estratégicas. Análisis de infraestructuras y superficies de ataque, correlación de indicadores técnicos y detección temprana, elaboración de inteligencia estratégica y operativa.</p>
+      </article>
+      <article>
+        <h3>Escolta Digital</h3>
+        <p>Protección de la identidad, reputación y seguridad de personas y organizaciones en el entorno online. Monitorización continua de presencia digital, detección de suplantaciones y campañas hostiles, identificación de amenazas dirigidas, respuesta temprana ante incidentes y reducción de superficie de ataque.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Equipo</h2>
+      <p>Profesionales con trayectoria en organismos nacionales de inteligencia y entornos operativos de alta exigencia. Dirigido por José Manuel Prada, ex-miembro del Centro Nacional de Inteligencia (CNI), especializado en análisis estratégico, gestión de riesgos y operaciones de seguridad.</p>
+    </section>
+
+    <section>
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:jmp@prcintel.com">jmp@prcintel.com</a></p>
+      <p>Web: <a href="https://www.prcintel.com">www.prcintel.com</a></p>
+    </section>
+  </div>
+</div>
+
+<noscript>
+  <style>#seo-fallback{position:static!important;left:auto!important;width:auto!important;height:auto!important;overflow:visible!important;padding:40px 20px;max-width:800px;margin:0 auto;color:#18191c;}#seo-fallback h1{font-family:Georgia,serif;font-size:48px;margin:20px 0;color:#2e3138;}#seo-fallback h2{font-family:Georgia,serif;font-size:32px;margin:40px 0 16px;color:#2e3138;}#seo-fallback h3{font-family:Georgia,serif;font-size:22px;margin:24px 0 8px;color:#18191c;}#seo-fallback p{margin:12px 0;line-height:1.7;color:#3f434a;}#seo-fallback a{color:#4a5058;}</style>
+  <p style="background:#4a5058;color:#f4f3f1;padding:12px;text-align:center;font-family:sans-serif;">Esta web utiliza JavaScript para funcionar al 100%. Active JavaScript para una experiencia completa.</p>
+</noscript>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const {
+  useState,
+  useEffect,
+  useRef
+} = React;
+const SERVICES = [{
+  tag: "Inteligencia de fuentes abiertas",
+  name: "OSINT",
+  summary: "Investigaciones avanzadas basadas en fuentes abiertas, accesibles de forma legal y pública.",
+  details: ["Identificación de amenazas y actores hostiles", "Análisis de presencia digital y exposición pública", "Investigación de fraude, suplantación y actividades ilícitas", "Monitorización de redes sociales y capas profundas de la red", "Preservación y documentación de evidencias digitales", "Elaboración de perfiles y mapas de riesgo"]
+}, {
+  tag: "Inteligencia humana",
+  name: "HUMINT",
+  summary: "Capacidades avanzadas en inteligencia humana para obtener perspectivas que los datos digitales no pueden revelar.",
+  details: ["Análisis de comportamientos, relaciones y dinámicas de influencia", "Obtención de información contextual en entornos complejos", "Validación y contraste de hipótesis mediante fuentes cualificadas", "Integración HUMINT con análisis técnico y estratégico"]
+}, {
+  tag: "Inteligencia digital",
+  name: "Ciberinteligencia",
+  summary: "Identificación, análisis y anticipación de amenazas en el entorno digital para respaldar decisiones estratégicas.",
+  details: ["Identificación de amenazas, actores hostiles y campañas maliciosas", "Análisis de infraestructuras y superficies de ataque", "Correlación de indicadores técnicos y detección temprana", "Elaboración de inteligencia estratégica y operativa"]
+}, {
+  tag: "Protección digital",
+  name: "Escolta Digital",
+  summary: "Protección de la identidad, reputación y seguridad de personas y organizaciones en el entorno online.",
+  details: ["Monitorización continua de presencia digital y exposición pública", "Detección de suplantaciones, fraudes y campañas hostiles", "Identificación de amenazas dirigidas y actores de riesgo", "Respuesta temprana ante incidentes y reducción de superficie de ataque"]
+}];
+const PILLARS = [{
+  title: "Seguridad basada en evidencia",
+  text: "Todas nuestras acciones y recomendaciones se sustentan en datos verificables y análisis rigurosos."
+}, {
+  title: "Inteligencia orientada a decisiones",
+  text: "Proporcionamos información clara y útil para facilitar decisiones estratégicas."
+}, {
+  title: "Transparencia y trazabilidad",
+  text: "Procesos abiertos y auditables que refuerzan la confianza y la calidad."
+}, {
+  title: "Innovación constante",
+  text: "Incorporamos tecnologías y metodologías avanzadas para mantenernos siempre un paso adelante."
+}, {
+  title: "Excelencia operativa",
+  text: "Compromiso con la calidad, la eficiencia y la mejora continua en cada etapa."
+}];
+const VALUES = [{
+  title: "Inteligencia no evidente",
+  text: "Sobre socios, clientes y perfiles clave para decisiones estratégicas."
+}, {
+  title: "Protección digital de perfiles sensibles",
+  text: "Reduciendo exposición y amenazas dirigidas con monitorización continua."
+}, {
+  title: "Información operativa contextualizada",
+  text: "Que refuerza decisiones críticas con contexto, interpretación y capacidad de acción."
+}, {
+  title: "Gestión proactiva del riesgo reputacional",
+  text: "Mediante monitorización y respuesta temprana ante incidentes."
+}, {
+  title: "Análisis de ciberamenazas",
+  text: "Para generar inteligencia accionable y anticipar vectores de riesgo."
+}];
+function useReveal() {
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) {
+        setVisible(true);
+        obs.disconnect();
+      }
+    }, {
+      threshold: 0.12
+    });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+  return [ref, visible];
+}
+function Reveal({
+  children,
+  delay = 0,
+  className = "",
+  as: As = "div",
+  ...rest
+}) {
+  const [ref, visible] = useReveal();
+  return React.createElement(As, _extends({
+    ref: ref,
+    className: `reveal ${visible ? 'visible' : ''} ${className}`,
+    style: {
+      transitionDelay: `${delay}s`
+    }
+  }, rest), children);
+}
+function Nav({
+  onContact
+}) {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const h = () => setScrolled(window.scrollY > 60);
+    window.addEventListener('scroll', h, {
+      passive: true
+    });
+    return () => window.removeEventListener('scroll', h);
+  }, []);
+  const scroll = id => document.getElementById(id)?.scrollIntoView({
+    behavior: 'smooth'
+  });
+  return React.createElement("nav", {
+    className: scrolled ? 'scrolled' : '',
+    "aria-label": "Navegaci\xF3n principal"
+  }, React.createElement("a", {
+    className: "nav-logo",
+    href: "#inicio",
+    onClick: e => {
+      e.preventDefault();
+      scroll('inicio');
+    },
+    "aria-label": "PRC Intel \u2014 Inicio"
+  }, "PRC Intel"), React.createElement("div", {
+    className: "nav-links",
+    role: "menubar"
+  }, React.createElement("a", {
+    href: "#nosotros",
+    role: "menuitem",
+    onClick: e => {
+      e.preventDefault();
+      scroll('nosotros');
+    }
+  }, "Nosotros"), React.createElement("a", {
+    href: "#servicios",
+    role: "menuitem",
+    onClick: e => {
+      e.preventDefault();
+      scroll('servicios');
+    }
+  }, "Servicios"), React.createElement("a", {
+    href: "#filosofia",
+    role: "menuitem",
+    onClick: e => {
+      e.preventDefault();
+      scroll('filosofia');
+    }
+  }, "Filosof\xEDa"), React.createElement("a", {
+    href: "#equipo",
+    role: "menuitem",
+    onClick: e => {
+      e.preventDefault();
+      scroll('equipo');
+    }
+  }, "Equipo")), React.createElement("button", {
+    className: "nav-cta",
+    onClick: () => scroll('contacto'),
+    "aria-label": "Ir a la secci\xF3n de contacto"
+  }, "Contacto"));
+}
+function Globe() {
+  const canvasRef = useRef(null);
+  const mouseRef = useRef({
+    x: 0,
+    y: 0
+  });
+  const rafRef = useRef(null);
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const ctx = canvas.getContext('2d');
+    const N = 180;
+    const R = 220;
+    const CONNECTION_DIST = 0.52;
+    const PULSE_INTERVAL = 80;
+    const pts3d = [];
+    const golden = Math.PI * (3 - Math.sqrt(5));
+    for (let i = 0; i < N; i++) {
+      const y = 1 - i / (N - 1) * 2;
+      const r = Math.sqrt(1 - y * y);
+      const theta = golden * i;
+      pts3d.push([Math.cos(theta) * r, y, Math.sin(theta) * r]);
+    }
+    const edges = [];
+    for (let i = 0; i < N; i++) {
+      for (let j = i + 1; j < N; j++) {
+        const [ax, ay, az] = pts3d[i],
+          [bx, by, bz] = pts3d[j];
+        const dot = ax * bx + ay * by + az * bz;
+        const ang = Math.acos(Math.max(-1, Math.min(1, dot)));
+        if (ang < CONNECTION_DIST) edges.push([i, j, 1 - ang / CONNECTION_DIST]);
+      }
+    }
+    const nodeEdges = Array.from({
+      length: N
+    }, () => []);
+    edges.forEach((e, idx) => {
+      nodeEdges[e[0]].push({
+        idx,
+        other: e[1]
+      });
+      nodeEdges[e[1]].push({
+        idx,
+        other: e[0]
+      });
+    });
+    const pulses = [];
+    const nodeFlash = Array(N).fill(null);
+    const lastArrival = Array(N).fill(-999);
+    let frame = 0;
+    function getAccent() {
+      const v = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+      return v || '#c9a84c';
+    }
+    function hexToRgb(hex) {
+      const clean = hex.trim().replace(/^#/, '');
+      const full = clean.length === 3 ? clean.split('').map(c => c + c).join('') : clean;
+      const r = /^([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(full);
+      return r ? [parseInt(r[1], 16), parseInt(r[2], 16), parseInt(r[3], 16)] : [201, 168, 76];
+    }
+    function spawnPulse(from, excludeEdge = -1) {
+      const candidates = nodeEdges[from].filter(e => e.idx !== excludeEdge);
+      if (!candidates.length) return;
+      const chosen = candidates[Math.floor(Math.random() * candidates.length)];
+      pulses.push({
+        from,
+        to: chosen.other,
+        edgeIdx: chosen.idx,
+        t: 0,
+        speed: 0.012 + Math.random() * 0.018,
+        trail: []
+      });
+    }
+    const MAX_PULSES = 6;
+    for (let s = 0; s < 3; s++) spawnPulse(Math.floor(Math.random() * N));
+    function rotY(pts, a) {
+      const c = Math.cos(a),
+        s = Math.sin(a);
+      return pts.map(([x, y, z]) => [c * x + s * z, y, -s * x + c * z]);
+    }
+    function rotX(pts, a) {
+      const c = Math.cos(a),
+        s = Math.sin(a);
+      return pts.map(([x, y, z]) => [x, c * y - s * z, s * y + c * z]);
+    }
+    function resize() {
+      const W = canvas.parentElement.offsetWidth;
+      const H = canvas.parentElement.offsetHeight;
+      canvas.width = W;
+      canvas.height = H;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    const onMouse = e => {
+      const rect = canvas.getBoundingClientRect();
+      mouseRef.current = {
+        x: (e.clientX - rect.left - canvas.width / 2) / canvas.width,
+        y: (e.clientY - rect.top - canvas.height / 2) / canvas.height
+      };
+    };
+    canvas.addEventListener('mousemove', onMouse);
+    let rotAngle = 0;
+    function draw() {
+      if (!reduceMotion) rafRef.current = requestAnimationFrame(draw);
+      frame++;
+      resize();
+      const W = canvas.width,
+        H = canvas.height;
+      ctx.clearRect(0, 0, W, H);
+      const mx = mouseRef.current.x * 0.4;
+      const my = mouseRef.current.y * 0.3;
+      rotAngle += 0.003;
+      let pts = rotY(pts3d, rotAngle + mx);
+      pts = rotX(pts, -0.18 + my);
+      const cx = W * 0.72,
+        cy = H * 0.5;
+      const fov = 700;
+      function project([x, y, z]) {
+        const scale = fov / (fov + z * R);
+        return [cx + x * R * scale, cy + y * R * scale, z, scale];
+      }
+      const projected = pts.map(project);
+      if (frame % 120 === 0 && pulses.length < MAX_PULSES) spawnPulse(Math.floor(Math.random() * N));
+      const accent = getAccent();
+      const [ar, ag, ab] = hexToRgb(accent);
+      for (let k = pulses.length - 1; k >= 0; k--) {
+        const p = pulses[k];
+        const [px1, py1] = projected[p.from];
+        const [px2, py2] = projected[p.to];
+        const cx2 = px1 + (px2 - px1) * p.t;
+        const cy2 = py1 + (py2 - py1) * p.t;
+        p.trail.push([cx2, cy2]);
+        if (p.trail.length > 12) p.trail.shift();
+        p.t += p.speed;
+        if (p.t >= 1) {
+          const dest = p.to;
+          const timeSinceLastArrival = frame - lastArrival[dest];
+          lastArrival[dest] = frame;
+          const isConfluence = timeSinceLastArrival < 40;
+          nodeFlash[dest] = {
+            age: 0,
+            maxAge: isConfluence ? 40 : 20,
+            intensity: isConfluence ? 1.0 : 0.5,
+            confluence: isConfluence
+          };
+          pulses.splice(k, 1);
+          if (pulses.length < MAX_PULSES && Math.random() < 0.5) spawnPulse(dest, p.edgeIdx);
+        }
+      }
+      const activeEdges = new Set(pulses.map(p => p.edgeIdx));
+      for (let ei = 0; ei < edges.length; ei++) {
+        const [i, j, strength] = edges[ei];
+        const [px1, py1, z1] = projected[i];
+        const [px2, py2, z2] = projected[j];
+        const depth = ((z1 + z2) / 2 + 1) / 2;
+        const isActive = activeEdges.has(ei);
+        const alpha = depth * depth * strength * (isActive ? 0.55 : 0.18);
+        if (alpha < 0.004) continue;
+        ctx.beginPath();
+        ctx.moveTo(px1, py1);
+        ctx.lineTo(px2, py2);
+        ctx.strokeStyle = `rgba(${ar},${ag},${ab},${alpha})`;
+        ctx.lineWidth = isActive ? 1.2 : 0.5;
+        ctx.stroke();
+      }
+      for (const p of pulses) {
+        if (p.trail.length < 2) continue;
+        const [px1, py1, pz1] = projected[p.from];
+        const [px2, py2, pz2] = projected[p.to];
+        const depth = ((pz1 + pz2) / 2 + 1) / 2;
+        if (depth < 0.1) continue;
+        for (let ti = 1; ti < p.trail.length; ti++) {
+          const frac = ti / p.trail.length;
+          const [tx1, ty1] = p.trail[ti - 1];
+          const [tx2, ty2] = p.trail[ti];
+          ctx.beginPath();
+          ctx.moveTo(tx1, ty1);
+          ctx.lineTo(tx2, ty2);
+          ctx.strokeStyle = `rgba(${ar},${ag},${ab},${frac * frac * 0.7 * depth})`;
+          ctx.lineWidth = frac * 2.5;
+          ctx.stroke();
+        }
+        const [hx, hy] = p.trail[p.trail.length - 1];
+        const grd = ctx.createRadialGradient(hx, hy, 0, hx, hy, 7 * depth);
+        grd.addColorStop(0, `rgba(${ar},${ag},${ab},${0.95 * depth})`);
+        grd.addColorStop(0.4, `rgba(${ar},${ag},${ab},${0.4 * depth})`);
+        grd.addColorStop(1, `rgba(${ar},${ag},${ab},0)`);
+        ctx.beginPath();
+        ctx.arc(hx, hy, 7 * depth, 0, Math.PI * 2);
+        ctx.fillStyle = grd;
+        ctx.fill();
+      }
+      for (let ni = 0; ni < N; ni++) {
+        const f = nodeFlash[ni];
+        if (!f) continue;
+        f.age++;
+        if (f.age > f.maxAge) {
+          nodeFlash[ni] = null;
+          continue;
+        }
+        const [npx, npy, nz] = projected[ni];
+        const depth = (nz + 1) / 2;
+        const life = 1 - f.age / f.maxAge;
+        const alpha = life * f.intensity * depth;
+        const radius = f.confluence ? (4 + (1 - life) * 28) * depth : (3 + (1 - life) * 14) * depth;
+        const grd = ctx.createRadialGradient(npx, npy, 0, npx, npy, radius);
+        grd.addColorStop(0, `rgba(${ar},${ag},${ab},${alpha})`);
+        grd.addColorStop(0.5, `rgba(${ar},${ag},${ab},${alpha * 0.4})`);
+        grd.addColorStop(1, `rgba(${ar},${ag},${ab},0)`);
+        ctx.beginPath();
+        ctx.arc(npx, npy, radius, 0, Math.PI * 2);
+        ctx.fillStyle = grd;
+        ctx.fill();
+        if (f.confluence && life > 0.5) {
+          ctx.beginPath();
+          ctx.arc(npx, npy, 3 * depth, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(255,255,255,${(life - 0.5) * 2 * alpha})`;
+          ctx.fill();
+        }
+      }
+      for (let i = 0; i < N; i++) {
+        const [px, py, z, scale] = projected[i];
+        const depth = (z + 1) / 2;
+        const alpha = depth * depth * 0.85 + 0.05;
+        const r = (depth > 0.7 ? 2.2 : 1.2) * scale;
+        ctx.beginPath();
+        ctx.arc(px, py, r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${ar},${ag},${ab},${alpha * 0.7})`;
+        ctx.fill();
+      }
+      const grd = ctx.createRadialGradient(cx, cy, R * 0.85, cx, cy, R * 1.15);
+      grd.addColorStop(0, `rgba(${ar},${ag},${ab},0)`);
+      grd.addColorStop(0.5, `rgba(${ar},${ag},${ab},0.04)`);
+      grd.addColorStop(1, `rgba(${ar},${ag},${ab},0)`);
+      ctx.beginPath();
+      ctx.arc(cx, cy, R * 1.05, 0, Math.PI * 2);
+      ctx.fillStyle = grd;
+      ctx.fill();
+    }
+    draw();
+    return () => {
+      cancelAnimationFrame(rafRef.current);
+      window.removeEventListener('resize', resize);
+      canvas.removeEventListener('mousemove', onMouse);
+    };
+  }, []);
+  return React.createElement("canvas", {
+    ref: canvasRef,
+    "aria-hidden": "true",
+    role: "presentation",
+    style: {
+      position: 'absolute',
+      inset: 0,
+      width: '100%',
+      height: '100%',
+      pointerEvents: 'all',
+      opacity: 0.9
+    }
+  });
+}
+function Hero() {
+  const scroll = id => document.getElementById(id)?.scrollIntoView({
+    behavior: 'smooth'
+  });
+  return React.createElement("section", {
+    className: "hero",
+    id: "inicio"
+  }, React.createElement("div", {
+    className: "hero-grid"
+  }), React.createElement(Globe, null), React.createElement("div", {
+    className: "hero-content"
+  }, React.createElement(Reveal, null, React.createElement("p", {
+    className: "hero-eyebrow"
+  }, "Inteligencia \xB7 Seguridad \xB7 Decisi\xF3n")), React.createElement(Reveal, {
+    delay: 0.1
+  }, React.createElement("h1", {
+    className: "hero-title serif"
+  }, "PRC", React.createElement("br", null), React.createElement("em", null, "Data &"), React.createElement("br", null), "Intelligence")), React.createElement(Reveal, {
+    delay: 0.2
+  }, React.createElement("p", {
+    className: "hero-subtitle"
+  }, "Transformamos datos en ventaja estrat\xE9gica")), React.createElement(Reveal, {
+    delay: 0.3
+  }, React.createElement("div", {
+    className: "hero-actions"
+  }, React.createElement("button", {
+    className: "btn-primary",
+    onClick: () => scroll('servicios')
+  }, "Nuestros servicios"), React.createElement("button", {
+    className: "btn-outline",
+    onClick: () => scroll('nosotros')
+  }, "Conocer m\xE1s")))), React.createElement("div", {
+    className: "hero-scroll"
+  }, React.createElement("div", {
+    className: "scroll-line"
+  }), React.createElement("span", null, "Scroll")));
+}
+function About() {
+  return React.createElement("section", {
+    id: "nosotros",
+    style: {
+      maxWidth: '1320px',
+      margin: '0 auto',
+      padding: '120px 60px'
+    }
+  }, React.createElement("div", {
+    className: "about-grid"
+  }, React.createElement("div", null, React.createElement(Reveal, null, React.createElement("p", {
+    className: "section-label"
+  }, "PRC Intel")), React.createElement(Reveal, {
+    delay: 0.1
+  }, React.createElement("h2", {
+    className: "section-title serif"
+  }, "Expertos en", React.createElement("br", null), React.createElement("em", null, "inteligencia"))), React.createElement(Reveal, {
+    delay: 0.15
+  }, React.createElement("div", {
+    className: "section-divider"
+  })), React.createElement(Reveal, {
+    delay: 0.2
+  }, React.createElement("p", {
+    className: "body-text"
+  }, "Somos especialistas en OSINT y ciberinteligencia, dos pilares esenciales para el desarrollo de estrategias de seguridad eficaces, proactivas y orientadas a la toma de decisiones.")), React.createElement(Reveal, {
+    delay: 0.25
+  }, React.createElement("p", {
+    className: "body-text",
+    style: {
+      marginTop: '20px'
+    }
+  }, "Nuestro equipo multidisciplinar trabaja con un compromiso firme hacia la seguridad, la transparencia y la excelencia operativa. Aplicamos herramientas avanzadas para transformar grandes vol\xFAmenes de datos en inteligencia accionable."))), React.createElement("div", null, React.createElement(Reveal, {
+    delay: 0.1
+  }, React.createElement("p", {
+    className: "section-label",
+    style: {
+      marginBottom: '28px'
+    }
+  }, "Objetivos")), React.createElement("ul", {
+    className: "objectives-list"
+  }, ["Proteger y fortalecer la seguridad de nuestros clientes mediante inteligencia precisa y verificable", "Convertir datos complejos en información clara para la toma de decisiones estratégicas", "Fomentar la transparencia y la colaboración con instituciones y equipos técnicos", "Impulsar la excelencia operativa mediante procesos analíticos rigurosos"].map((t, i) => React.createElement(Reveal, {
+    as: "li",
+    key: i,
+    delay: 0.15 + i * 0.08,
+    className: "obj-item"
+  }, React.createElement("span", {
+    className: "obj-num serif",
+    "aria-hidden": "true"
+  }, "0", i + 1), React.createElement("span", {
+    className: "obj-text"
+  }, t)))))));
+}
+function Services() {
+  const [open, setOpen] = useState(null);
+  return React.createElement("section", {
+    className: "services-section",
+    id: "servicios",
+    style: {
+      padding: '120px 60px'
+    }
+  }, React.createElement("div", {
+    style: {
+      maxWidth: '1200px',
+      margin: '0 auto'
+    }
+  }, React.createElement(Reveal, null, React.createElement("p", {
+    className: "section-label"
+  }, "Capacidades")), React.createElement(Reveal, {
+    delay: 0.1
+  }, React.createElement("h2", {
+    className: "section-title serif"
+  }, "Nuestros", React.createElement("br", null), React.createElement("em", null, "servicios"))), React.createElement(Reveal, {
+    delay: 0.15
+  }, React.createElement("div", {
+    className: "section-divider"
+  }))), React.createElement("div", {
+    className: "services-grid",
+    style: {
+      marginTop: '60px'
+    }
+  }, SERVICES.map((s, i) => React.createElement(Reveal, {
+    key: i,
+    delay: i * 0.08
+  }, React.createElement("div", {
+    className: `service-card ${open === i ? 'active' : ''}`,
+    onClick: () => setOpen(open === i ? null : i)
+  }, React.createElement("p", {
+    className: "service-tag"
+  }, s.tag), React.createElement("h3", {
+    className: "service-name serif"
+  }, s.name), React.createElement("p", {
+    className: "service-summary"
+  }, s.summary), React.createElement("div", {
+    className: `service-expand ${open === i ? 'open' : ''}`
+  }, React.createElement("div", {
+    className: "service-detail"
+  }, React.createElement("ul", null, s.details.map((d, j) => React.createElement("li", {
+    key: j
+  }, d))))), React.createElement("div", {
+    className: "service-arrow"
+  }, open === i ? '↑' : '↗'))))));
+}
+function Philosophy() {
+  return React.createElement("section", {
+    id: "filosofia",
+    style: {
+      padding: '120px 60px',
+      maxWidth: '1320px',
+      margin: '0 auto'
+    }
+  }, React.createElement("div", {
+    className: "phil-header"
+  }, React.createElement(Reveal, null, React.createElement("p", {
+    className: "section-label"
+  }, "Nuestra filosof\xEDa")), React.createElement(Reveal, {
+    delay: 0.1
+  }, React.createElement("h2", {
+    className: "section-title serif"
+  }, "Cinco pilares", React.createElement("br", null), "que nos ", React.createElement("em", null, "definen"))), React.createElement(Reveal, {
+    delay: 0.15
+  }, React.createElement("div", {
+    className: "section-divider"
+  }))), React.createElement("div", {
+    className: "pillars"
+  }, PILLARS.map((p, i) => React.createElement(Reveal, {
+    key: i,
+    delay: i * 0.07
+  }, React.createElement("div", {
+    className: "pillar"
+  }, React.createElement("div", {
+    className: "pillar-num serif"
+  }, "0", i + 1), React.createElement("div", {
+    className: "pillar-title serif"
+  }, p.title), React.createElement("div", {
+    className: "pillar-text"
+  }, p.text))))));
+}
+function Team() {
+  const members = [{
+    role: "Director & Fundador",
+    name: "José Manuel Prada",
+    bio: "Ex-miembro del Centro Nacional de Inteligencia (CNI). Especializado en análisis estratégico, gestión de riesgos y operaciones de seguridad. Visión profunda del ciclo de inteligencia en entornos de alta exigencia.",
+    init: "JM"
+  }, {
+    role: "Director de Seguridad",
+    name: "Director de Seguridad",
+    bio: "Trayectoria en gestión de riesgos, protección de infraestructuras críticas y coordinación de equipos multidisciplinares. Especialista en inteligencia aplicada y entornos operativos de alta exigencia.",
+    init: "DS"
+  }, {
+    role: "Analista CTI",
+    name: "Analista CTI",
+    bio: "Experta en OSINT con amplia experiencia en ciberseguridad, investigación digital y formación técnica para unidades operativas. Reconocida por su precisión metodológica y capacidad para generar inteligencia accionable.",
+    init: "CTI"
+  }];
+  return React.createElement("section", {
+    className: "team-section",
+    id: "equipo",
+    style: {
+      padding: '120px 60px'
+    }
+  }, React.createElement("div", {
+    className: "team-header"
+  }, React.createElement("div", null, React.createElement(Reveal, null, React.createElement("p", {
+    className: "section-label"
+  }, "El equipo")), React.createElement(Reveal, {
+    delay: 0.1
+  }, React.createElement("h2", {
+    className: "section-title serif"
+  }, "Experiencia", React.createElement("br", null), React.createElement("em", null, "institucional")))), React.createElement(Reveal, {
+    delay: 0.2
+  }, React.createElement("p", {
+    style: {
+      fontSize: '14px',
+      color: 'var(--text-dim)',
+      maxWidth: '340px',
+      lineHeight: '1.7',
+      textAlign: 'right'
+    }
+  }, "Profesionales con trayectoria en organismos nacionales de inteligencia y entornos operativos de alta exigencia."))), React.createElement("div", {
+    className: "team-grid"
+  }, members.map((m, i) => React.createElement(Reveal, {
+    key: i,
+    delay: i * 0.1
+  }, React.createElement("div", {
+    className: "team-card"
+  }, React.createElement("div", {
+    className: "team-photo"
+  }, React.createElement("div", {
+    className: "team-photo-inner"
+  }, m.init)), React.createElement("p", {
+    className: "team-role"
+  }, m.role), React.createElement("h3", {
+    className: "team-name serif"
+  }, m.name), React.createElement("p", {
+    className: "team-bio"
+  }, m.bio))))));
+}
+function ValueProp() {
+  return React.createElement("section", {
+    style: {
+      padding: '120px 60px'
+    }
+  }, React.createElement("div", {
+    style: {
+      maxWidth: '1200px',
+      margin: '0 auto'
+    }
+  }, React.createElement(Reveal, null, React.createElement("p", {
+    className: "section-label"
+  }, "\xBFQu\xE9 aportamos?")), React.createElement(Reveal, {
+    delay: 0.1
+  }, React.createElement("h2", {
+    className: "section-title serif",
+    style: {
+      marginBottom: '60px'
+    }
+  }, "Un paso por", React.createElement("br", null), React.createElement("em", null, "delante"))), React.createElement("div", {
+    className: "value-grid"
+  }, React.createElement("div", null, React.createElement("div", {
+    className: "value-items"
+  }, VALUES.map((v, i) => React.createElement(Reveal, {
+    key: i,
+    delay: i * 0.07
+  }, React.createElement("div", {
+    className: "value-item"
+  }, React.createElement("div", {
+    className: "value-icon"
+  }, React.createElement("div", {
+    className: "value-icon-inner"
+  })), React.createElement("div", null, React.createElement("div", {
+    className: "value-item-title serif"
+  }, v.title), React.createElement("div", {
+    className: "value-item-text"
+  }, v.text))))))), React.createElement(Reveal, {
+    delay: 0.2
+  }, React.createElement("div", {
+    className: "value-callout"
+  }, React.createElement("p", {
+    className: "callout-title serif"
+  }, "\"Inteligencia que permite anticiparse, decidir con mayor precisi\xF3n y proteger sus activos cr\xEDticos.\""), React.createElement("p", {
+    className: "callout-text"
+  }, "Nuestros conocimientos especializados, junto al trabajo de personal con amplia experiencia en inteligencia, ciberseguridad y an\xE1lisis operativo, nos permiten ofrecer una visi\xF3n integral del riesgo y aportar informaci\xF3n cr\xEDtica para la toma de decisiones estrat\xE9gicas."))))));
+}
+function Contact() {
+  return React.createElement("section", {
+    className: "contact-section",
+    id: "contacto",
+    style: {
+      padding: '120px 60px'
+    }
+  }, React.createElement("div", {
+    className: "contact-inner"
+  }, React.createElement("div", null, React.createElement(Reveal, null, React.createElement("p", {
+    className: "section-label"
+  }, "Contacto")), React.createElement(Reveal, {
+    delay: 0.1
+  }, React.createElement("h2", {
+    className: "section-title serif"
+  }, "Hablemos de", React.createElement("br", null), "su ", React.createElement("em", null, "seguridad"))), React.createElement(Reveal, {
+    delay: 0.15
+  }, React.createElement("div", {
+    className: "section-divider"
+  })), React.createElement(Reveal, {
+    delay: 0.2
+  }, React.createElement("p", {
+    className: "body-text"
+  }, "\xBFNecesita proteger sus activos, anticipar riesgos o tomar decisiones con mayor certeza? Nuestro equipo est\xE1 disponible para una consulta inicial confidencial."))), React.createElement("div", null, [{
+    label: "Contacto",
+    value: "José Manuel Prada"
+  }, {
+    label: "Email",
+    value: React.createElement("a", {
+      href: "mailto:jmp@prcintel.com"
+    }, "jmp@prcintel.com")
+  }, {
+    label: "Web",
+    value: React.createElement("a", {
+      href: "https://www.prcintel.com",
+      target: "_blank",
+      rel: "noopener noreferrer"
+    }, "www.prcintel.com")
+  }].map((c, i) => React.createElement(Reveal, {
+    key: i,
+    delay: i * 0.1
+  }, React.createElement("div", {
+    className: "contact-line"
+  }, React.createElement("span", {
+    className: "contact-label"
+  }, c.label), React.createElement("span", {
+    className: "contact-value"
+  }, c.value)))))));
+}
+const LEGAL = {
+  aviso: {
+    title: "Aviso Legal",
+    subtitle: "Información legal",
+    content: React.createElement(React.Fragment, null, React.createElement("p", null, "En cumplimiento con el deber de informaci\xF3n recogido en el art\xEDculo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Informaci\xF3n y del Comercio Electr\xF3nico (LSSI-CE), se informa:"), React.createElement("h3", null, "Titular del sitio web"), React.createElement("p", null, React.createElement("strong", null, "Denominaci\xF3n social:"), " PRC Data & Intelligence", React.createElement("br", null), React.createElement("strong", null, "Responsable:"), " Jos\xE9 Manuel Prada", React.createElement("br", null), React.createElement("strong", null, "Email:"), " jmp@prcintel.com", React.createElement("br", null), React.createElement("strong", null, "Web:"), " www.prcintel.com"), React.createElement("h3", null, "Objeto"), React.createElement("p", null, "El presente sitio web tiene car\xE1cter informativo y comercial. PRC Data & Intelligence se reserva el derecho a modificar, en cualquier momento, la presentaci\xF3n y configuraci\xF3n del sitio web, as\xED como los presentes t\xE9rminos y condiciones."), React.createElement("h3", null, "Propiedad intelectual e industrial"), React.createElement("p", null, "Todos los contenidos del sitio web (textos, fotograf\xEDas, gr\xE1ficos, im\xE1genes, tecnolog\xEDa, software, as\xED como su dise\xF1o gr\xE1fico y c\xF3digos fuente) son propiedad de PRC Data & Intelligence o de terceros, no pudiendo ser objeto de explotaci\xF3n, reproducci\xF3n, distribuci\xF3n, modificaci\xF3n, comunicaci\xF3n p\xFAblica, cesi\xF3n o transformaci\xF3n sin el consentimiento previo y por escrito de los titulares."), React.createElement("h3", null, "Responsabilidad"), React.createElement("p", null, "PRC Data & Intelligence no se responsabiliza de los da\xF1os producidos en el software y equipos inform\xE1ticos de los usuarios o de terceros durante la prestaci\xF3n de los servicios del sitio web, ni de los da\xF1os producidos a terceros mediante la utilizaci\xF3n il\xEDcita del presente sitio web."), React.createElement("h3", null, "Legislaci\xF3n aplicable y jurisdicci\xF3n"), React.createElement("p", null, "Las relaciones entre PRC Data & Intelligence y los usuarios se regir\xE1n por la normativa espa\xF1ola vigente y cualquier controversia se someter\xE1 a los Juzgados y tribunales de la ciudad de Madrid."))
+  },
+  privacidad: {
+    title: "Política de Privacidad",
+    subtitle: "Protección de datos",
+    content: React.createElement(React.Fragment, null, React.createElement("p", null, "En cumplimiento del Reglamento (UE) 2016/679 (RGPD) y la Ley Org\xE1nica 3/2018 (LOPDGDD), le informamos sobre el tratamiento de sus datos personales."), React.createElement("h3", null, "Responsable del tratamiento"), React.createElement("p", null, React.createElement("strong", null, "PRC Data & Intelligence"), " \xB7 Jos\xE9 Manuel Prada \xB7 jmp@prcintel.com"), React.createElement("h3", null, "Finalidad del tratamiento"), React.createElement("p", null, "Los datos personales que nos facilite ser\xE1n tratados con las siguientes finalidades: gesti\xF3n de consultas y solicitudes de informaci\xF3n, prestaci\xF3n de los servicios contratados, y cumplimiento de obligaciones legales."), React.createElement("h3", null, "Legitimaci\xF3n"), React.createElement("p", null, "La base legal para el tratamiento de sus datos es el consentimiento del interesado, la ejecuci\xF3n de un contrato o el cumplimiento de obligaciones legales, seg\xFAn el caso."), React.createElement("h3", null, "Destinatarios"), React.createElement("p", null, "Los datos no ser\xE1n cedidos a terceros salvo obligaci\xF3n legal. No se realizan transferencias internacionales de datos."), React.createElement("h3", null, "Derechos"), React.createElement("p", null, "Puede ejercitar sus derechos de acceso, rectificaci\xF3n, supresi\xF3n, portabilidad, limitaci\xF3n y oposici\xF3n enviando un escrito a jmp@prcintel.com, junto con una copia de su documento identificativo."), React.createElement("h3", null, "Conservaci\xF3n"), React.createElement("p", null, "Los datos se conservar\xE1n durante el tiempo necesario para la finalidad para la que fueron recabados y para cumplir con las obligaciones legales derivadas del tratamiento."))
+  },
+  cookies: {
+    title: "Política de Cookies",
+    subtitle: "Uso de cookies",
+    content: React.createElement(React.Fragment, null, React.createElement("p", null, "Este sitio web utiliza cookies y tecnolog\xEDas similares para mejorar la experiencia de navegaci\xF3n y analizar el uso del sitio."), React.createElement("h3", null, "\xBFQu\xE9 son las cookies?"), React.createElement("p", null, "Las cookies son peque\xF1os archivos de texto que se almacenan en su dispositivo cuando visita un sitio web. Permiten que el sitio recuerde sus preferencias y mejore su experiencia."), React.createElement("h3", null, "Tipos de cookies utilizadas"), React.createElement("p", null, React.createElement("strong", null, "Cookies t\xE9cnicas (necesarias):"), " Imprescindibles para el funcionamiento del sitio, como recordar el tema visual seleccionado. No requieren consentimiento."), React.createElement("p", null, "Este sitio web ", React.createElement("strong", null, "no utiliza cookies anal\xEDticas ni de seguimiento"), " de terceros. No se instalan cookies publicitarias ni se comparte informaci\xF3n de navegaci\xF3n con terceros."), React.createElement("h3", null, "Gesti\xF3n de cookies"), React.createElement("p", null, "Puede aceptar o rechazar las cookies no t\xE9cnicas mediante el banner que aparece en su primera visita. Tambi\xE9n puede configurar su navegador para bloquear o eliminar cookies, aunque esto puede afectar al funcionamiento del sitio."), React.createElement("h3", null, "M\xE1s informaci\xF3n"), React.createElement("p", null, "Para cualquier consulta sobre nuestra pol\xEDtica de cookies, puede contactar con nosotros en jmp@prcintel.com."))
+  }
+};
+function Modal({
+  modal,
+  onClose
+}) {
+  const data = LEGAL[modal];
+  const closeRef = useRef(null);
+  const titleId = `modal-title-${modal}`;
+  useEffect(() => {
+    if (!data) return;
+    const onKey = e => {
+      if (e.key === 'Escape') onClose();
+    };
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    document.addEventListener('keydown', onKey);
+    closeRef.current?.focus();
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [data, onClose]);
+  if (!data) return null;
+  return React.createElement("div", {
+    className: "modal-overlay",
+    onClick: onClose,
+    role: "dialog",
+    "aria-modal": "true",
+    "aria-labelledby": titleId
+  }, React.createElement("div", {
+    className: "modal-box",
+    onClick: e => e.stopPropagation()
+  }, React.createElement("button", {
+    ref: closeRef,
+    className: "modal-close",
+    onClick: onClose,
+    "aria-label": "Cerrar ventana"
+  }, "\u2715"), React.createElement("h2", {
+    id: titleId,
+    className: "modal-title serif"
+  }, data.title), React.createElement("p", {
+    className: "modal-subtitle"
+  }, data.subtitle), React.createElement("div", {
+    className: "modal-body"
+  }, data.content)));
+}
+function Footer({
+  onModal
+}) {
+  const scroll = id => document.getElementById(id)?.scrollIntoView({
+    behavior: 'smooth'
+  });
+  return React.createElement("footer", {
+    role: "contentinfo"
+  }, React.createElement("div", {
+    className: "footer-main"
+  }, React.createElement("div", {
+    className: "footer-brand"
+  }, React.createElement("div", {
+    className: "footer-logo"
+  }, "PRC Intel"), React.createElement("p", null, "Inteligencia estrat\xE9gica, ciberseguridad y an\xE1lisis operativo para organizaciones que necesitan anticiparse, protegerse y actuar con ventaja."), React.createElement("p", {
+    style: {
+      marginTop: '12px',
+      fontSize: '12px'
+    }
+  }, React.createElement("a", {
+    href: "mailto:jmp@prcintel.com",
+    style: {
+      color: 'inherit',
+      textDecoration: 'none'
+    }
+  }, "jmp@prcintel.com"), ' · ', React.createElement("a", {
+    href: "https://www.prcintel.com",
+    style: {
+      color: 'inherit',
+      textDecoration: 'none'
+    }
+  }, "www.prcintel.com"))), React.createElement("nav", {
+    "aria-label": "Navegaci\xF3n del pie"
+  }, React.createElement("p", {
+    className: "footer-col-title"
+  }, "Navegaci\xF3n"), React.createElement("ul", {
+    className: "footer-links"
+  }, [['nosotros', 'Nosotros'], ['servicios', 'Servicios'], ['filosofia', 'Filosofía'], ['equipo', 'Equipo'], ['contacto', 'Contacto']].map(([id, label]) => React.createElement("li", {
+    key: id
+  }, React.createElement("a", {
+    href: `#${id}`,
+    onClick: e => {
+      e.preventDefault();
+      scroll(id);
+    }
+  }, label))))), React.createElement("nav", {
+    "aria-label": "Servicios"
+  }, React.createElement("p", {
+    className: "footer-col-title"
+  }, "Servicios"), React.createElement("ul", {
+    className: "footer-links"
+  }, ['OSINT', 'HUMINT', 'Ciberinteligencia', 'Escolta Digital'].map(s => React.createElement("li", {
+    key: s
+  }, React.createElement("a", {
+    href: "#servicios",
+    onClick: e => {
+      e.preventDefault();
+      scroll('servicios');
+    }
+  }, s))))), React.createElement("nav", {
+    "aria-label": "Informaci\xF3n legal"
+  }, React.createElement("p", {
+    className: "footer-col-title"
+  }, "Legal"), React.createElement("ul", {
+    className: "footer-links"
+  }, React.createElement("li", null, React.createElement("a", {
+    href: "#aviso-legal",
+    onClick: e => {
+      e.preventDefault();
+      onModal('aviso');
+    }
+  }, "Aviso Legal")), React.createElement("li", null, React.createElement("a", {
+    href: "#privacidad",
+    onClick: e => {
+      e.preventDefault();
+      onModal('privacidad');
+    }
+  }, "Pol\xEDtica de Privacidad")), React.createElement("li", null, React.createElement("a", {
+    href: "#cookies",
+    onClick: e => {
+      e.preventDefault();
+      onModal('cookies');
+    }
+  }, "Pol\xEDtica de Cookies"))))), React.createElement("div", {
+    style: {
+      borderTop: '1px solid var(--border-dim)'
+    }
+  }, React.createElement("div", {
+    className: "footer-bottom"
+  }, React.createElement("span", {
+    className: "footer-copy"
+  }, "\xA9 2026 PRC Data & Intelligence \xB7 Todos los derechos reservados"), React.createElement("div", {
+    className: "footer-legal-links"
+  }, React.createElement("a", {
+    href: "#aviso-legal",
+    onClick: e => {
+      e.preventDefault();
+      onModal('aviso');
+    }
+  }, "Aviso Legal"), React.createElement("a", {
+    href: "#privacidad",
+    onClick: e => {
+      e.preventDefault();
+      onModal('privacidad');
+    }
+  }, "Privacidad"), React.createElement("a", {
+    href: "#cookies",
+    onClick: e => {
+      e.preventDefault();
+      onModal('cookies');
+    }
+  }, "Cookies")))));
+}
+function CookieBanner({
+  onModal
+}) {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    if (!localStorage.getItem('prc-cookies')) setVisible(true);
+  }, []);
+  const accept = () => {
+    localStorage.setItem('prc-cookies', 'accepted');
+    setVisible(false);
+  };
+  const reject = () => {
+    localStorage.setItem('prc-cookies', 'rejected');
+    setVisible(false);
+  };
+  if (!visible) return null;
+  return React.createElement("div", {
+    className: "cookie-banner"
+  }, React.createElement("p", {
+    className: "cookie-text"
+  }, "Utilizamos cookies propias y de terceros para mejorar su experiencia. Puede aceptarlas, rechazarlas o consultar nuestra", ' ', React.createElement("a", {
+    onClick: () => onModal('cookies')
+  }, "Pol\xEDtica de Cookies"), " y", ' ', React.createElement("a", {
+    onClick: () => onModal('privacidad')
+  }, "Pol\xEDtica de Privacidad"), "."), React.createElement("div", {
+    className: "cookie-actions"
+  }, React.createElement("button", {
+    className: "cookie-btn cookie-btn-reject",
+    onClick: reject
+  }, "Rechazar"), React.createElement("button", {
+    className: "cookie-btn cookie-btn-accept",
+    onClick: accept
+  }, "Aceptar todas")));
+}
+function App() {
+  const [modal, setModal] = useState(null);
+  return React.createElement(React.Fragment, null, React.createElement(Nav, null), React.createElement("main", {
+    id: "main-content"
+  }, React.createElement(Hero, null), React.createElement(About, null), React.createElement(Services, null), React.createElement(Philosophy, null), React.createElement(Team, null), React.createElement(ValueProp, null), React.createElement(Contact, null)), React.createElement(Footer, {
+    onModal: setModal
+  }), modal && React.createElement(Modal, {
+    modal: modal,
+    onClose: () => setModal(null)
+  }));
+}
+ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App, null));
+});
+</script>
+</body>
+</html>
