@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>José Manuel Prada — PRC Intel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<script>(function(){var t=localStorage.getItem('prc-theme')||'platino';if(t!=='gold')document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--bg:#09112a;--bg2:#0d1835;--bg3:#111f42;--accent:#c9a84c;--text:#e8e4dc;--text-dim:#8a8478;--text-mid:#b8b0a0;--border:rgba(201,168,76,0.18);--border-dim:rgba(255,255,255,0.06);--nav-blur:rgba(9,17,42,0.88);}
+[data-theme="noir"]{--bg:#070a10;--bg2:#0c1018;--bg3:#111820;--accent:#4db8d4;--text:#e2ecf0;--text-dim:#5a7a84;--text-mid:#9ab4bc;--border:rgba(77,184,212,0.18);--border-dim:rgba(255,255,255,0.06);--nav-blur:rgba(7,10,16,0.88);}
+[data-theme="slate"]{--bg:#0b0e17;--bg2:#101420;--bg3:#161c2e;--accent:#7c8fff;--text:#e4e6f0;--text-dim:#5a5f7a;--text-mid:#9098b8;--border:rgba(124,143,255,0.18);--border-dim:rgba(255,255,255,0.06);--nav-blur:rgba(11,14,23,0.88);}
+[data-theme="platino"]{--bg:#f4f3f1;--bg2:#eceae6;--bg3:#e2dfda;--accent:#4a5058;--text:#18191c;--text-dim:#9a9d9f;--text-mid:#52575e;--border:rgba(74,80,88,0.22);--border-dim:rgba(0,0,0,0.07);--nav-blur:rgba(244,243,241,0.94);}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-weight:300;min-height:100vh;-webkit-font-smoothing:antialiased;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:0 60px;height:72px;background:var(--nav-blur);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-bottom:1px solid var(--border-dim);position:sticky;top:0;z-index:10;}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;letter-spacing:0.12em;color:var(--accent);text-transform:uppercase;text-decoration:none;}
+.nav-back{font-size:12px;color:var(--text-dim);letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;transition:color 0.25s;-webkit-tap-highlight-color:transparent;}
+.nav-back:hover{color:var(--accent);}
+
+/* HERO PROFILE */
+.profile-hero{padding:100px 60px 80px;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start;}
+.avatar{width:300px;height:300px;border-radius:50%;background:var(--bg2);border:1px solid var(--border);overflow:hidden;margin-bottom:28px;}
+.avatar img{width:100%;height:100%;object-fit:cover;object-position:center 12%;image-rendering:-webkit-optimize-contrast;}
+.profile-role{font-size:10px;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
+.profile-name{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,6vw,72px);font-weight:300;line-height:1.0;color:var(--text);margin-bottom:24px;}
+.profile-tagline{font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;font-weight:300;color:var(--text-mid);margin-bottom:40px;line-height:1.5;}
+.divider{width:48px;height:1px;background:var(--accent);opacity:0.5;margin-bottom:40px;}
+
+/* CONTENT */
+.profile-body{max-width:1200px;margin:0 auto;padding:0 60px 100px;display:grid;grid-template-columns:2fr 1fr;gap:80px;}
+.body-text p{font-size:15px;color:var(--text-mid);line-height:1.9;margin-bottom:20px;}
+.body-text h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--text);margin:40px 0 14px;}
+.sidebar{}
+.sidebar-block{padding:28px 0;border-bottom:1px solid var(--border-dim);}
+.sidebar-label{font-size:10px;font-weight:500;letter-spacing:0.25em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
+.sidebar-value{font-size:14px;color:var(--text-mid);line-height:1.7;}
+.tag-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+.tag{font-size:11px;color:var(--text-dim);border:1px solid var(--border-dim);padding:5px 12px;letter-spacing:0.05em;}
+
+footer{border-top:1px solid var(--border-dim);padding:28px 60px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;background:var(--bg);}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:600;letter-spacing:0.15em;color:var(--accent);text-transform:uppercase;}
+.footer-copy{font-size:11px;color:var(--text-dim);}
+
+@media(max-width:768px){
+  nav{padding:0 20px;}
+  .profile-hero{grid-template-columns:1fr;gap:32px;padding:60px 24px 48px;}
+  .avatar{width:180px;height:180px;}
+  .profile-body{grid-template-columns:1fr;gap:48px;padding:0 24px 72px;}
+  footer{padding:24px 20px;flex-direction:column;align-items:flex-start;}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="PRC Intel.html">PRC Intel</a>
+  <a class="nav-back" href="PRC Intel.html">← Equipo</a>
+</nav>
+
+<div class="profile-hero">
+  <div>
+    <div class="avatar"><img src="uploads/jmp.jpg" alt="José Manuel Prada"></div>
+  </div>
+  <div>
+    <p class="profile-role">Director & Fundador</p>
+    <h1 class="profile-name" style="font-family:'Cormorant Garamond',serif;">José Manuel<br>Prada</h1>
+    <p class="profile-tagline">Ex-miembro del Centro Nacional de Inteligencia.<br>Especialista en análisis estratégico y operaciones de seguridad.</p>
+    <div class="divider"></div>
+    <p style="font-size:14px;color:var(--text-dim);line-height:1.8;">Profesional con trayectoria en los más altos estamentos de la inteligencia nacional española, con una visión profunda del ciclo de inteligencia y de los riesgos emergentes en entornos complejos.</p>
+  </div>
+</div>
+
+<div class="profile-body">
+  <div class="body-text">
+    <h3>Trayectoria</h3>
+    <p>José Manuel Prada cuenta con una dilatada trayectoria profesional en organismos nacionales de inteligencia, donde desarrolló su especialización en análisis estratégico, gestión de riesgos y operaciones de seguridad de alto nivel. Su experiencia dentro del Centro Nacional de Inteligencia (CNI) le aporta una comprensión profunda de los métodos, protocolos y estándares operativos propios de los servicios de inteligencia.</p>
+    <p>Esta base institucional le permite comprender el ciclo completo de inteligencia: desde la recopilación de información mediante fuentes abiertas y humanas, hasta la elaboración de productos de inteligencia accionables orientados a la toma de decisiones estratégicas en entornos de alta exigencia.</p>
+    <h3>Especialización</h3>
+    <p>Su perfil combina el rigor analítico de la inteligencia institucional con una sólida capacidad para trasladar ese conocimiento al ámbito corporativo y empresarial. Esta combinación permite a PRC Intel ofrecer a sus clientes una perspectiva diferencial: la de profesionales que han operado en entornos donde la precisión y la discreción no son opcionales, sino esenciales.</p>
+    <p>Especializado en la evaluación de amenazas complejas, el diseño de metodologías de obtención y verificación de información, y la elaboración de informes estratégicos para la protección de activos críticos y la toma de decisiones en contextos de riesgo.</p>
+    <h3>Enfoque directivo</h3>
+    <p>Como fundador de PRC Intel, José Manuel Prada lidera un equipo multidisciplinar con la convicción de que la inteligencia de calidad es el activo más valioso para cualquier organización que necesite anticiparse, protegerse y actuar con ventaja estratégica. Su liderazgo se sustenta en la disciplina, la precisión analítica y una orientación constante hacia resultados verificables.</p>
+  </div>
+  <div class="sidebar">
+    <div class="sidebar-block">
+      <p class="sidebar-label">Cargo</p>
+      <p class="sidebar-value">Director & Fundador<br>PRC Data & Intelligence</p>
+    </div>
+    <div class="sidebar-block">
+      <p class="sidebar-label">Contacto</p>
+      <p class="sidebar-value"><a href="mailto:jmp@prcintel.com" style="color:var(--accent);text-decoration:none;">jmp@prcintel.com</a></p>
+    </div>
+    <div class="sidebar-block">
+      <p class="sidebar-label">Áreas de especialización</p>
+      <div class="tag-list">
+        <span class="tag">Análisis estratégico</span>
+        <span class="tag">Gestión de riesgos</span>
+        <span class="tag">HUMINT</span>
+        <span class="tag">Operaciones de seguridad</span>
+        <span class="tag">Ciclo de inteligencia</span>
+        <span class="tag">Protección de activos críticos</span>
+      </div>
+    </div>
+    <div class="sidebar-block">
+      <p class="sidebar-label">Experiencia</p>
+      <p class="sidebar-value">Centro Nacional de Inteligencia (CNI)<br>Organismos nacionales de seguridad<br>Sector corporativo & empresarial</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="footer-logo">PRC Intel</span>
+  <span class="footer-copy">© 2026 PRC Data & Intelligence</span>
+</footer>
+</body>
+</html>
